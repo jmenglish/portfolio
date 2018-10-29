@@ -64,7 +64,7 @@ section {
 }
 
 section.nav {
-  padding: 3rem;
+  padding: 3rem 1rem;
 }
 
 section.hero {
@@ -72,6 +72,10 @@ section.hero {
   background-color: black;
 }
 
+
+section.footer {
+  padding: 4rem 1rem;
+}
 /*tablet setup; can be written to specific size ex: ipad*/
 @media screen and (min-width: 768px){
   .container {
