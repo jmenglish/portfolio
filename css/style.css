@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+/*hero text*/
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-size:1.6rem;
+  color: white;
+  text-align: center;
+}
+
+
+/*text for body content*/
+
+/*header sections*/
+h4 {
+  font-size:1.8rem;
+  text-align: center;
+}
+
+/*sub-header sections*/
+h5 {
+  font-size:
+}
+
+/*body text*/
+p {
+  font-size: 1.6rem;
+  /*margin-top: .5rem; (will need this for about/case study pages to add
+  space btw headers and paragraphs)*/
+}
+
+.container {
+  background-color: white;
+  /*height: 100vh;*/
+  margin: 0 auto;
+  width: 90%;
+}
+
+section {
+  background-color: blue;
+  color: black;
+  margin-top: 1rem;
+  padding: 15rem 0;
+}
+
+section.nav {
+  padding: 3rem;
+}
+
+section.hero {
+  padding: 20rem 1rem;
+  background-color: black;
+}
+
+/*tablet setup; can be written to specific size ex: ipad*/
+@media screen and (min-width: 768px){
+  .container {
+    width: 70rem; /*700px*/
+  }
+}
+
+/*mobile setup; not written to specific size due to varies mobile devices*/
+@media screen and (min-width: 1000px){
+  .container {
+    width: 98rem; /*980px*/
+  }
+}
