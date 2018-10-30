@@ -74,7 +74,7 @@ section {
   background-color: blue;
   color: black;
   margin-top: 1rem;
-  padding: 5rem 3rem;
+  padding: 10rem 3rem;
 }
 
 /*specific sections*/
@@ -102,7 +102,7 @@ section.hero {
 }
 
 section.footer {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
