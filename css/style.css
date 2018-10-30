@@ -33,25 +33,29 @@ h3 {
 
 /*header sections*/
 h4 {
-  font-size:1.8rem;
-  text-align: center;
+  font-size: 2.4rem;
+  text-align: left;
 }
 
 /*sub-header sections*/
 h5 {
-  font-size:
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem;
 }
+
 
 /*body text*/
 p {
-  font-size: 1.6rem;
-  /*margin-top: .5rem; (will need this for about/case study pages to add
-  space btw headers and paragraphs)*/
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  padding: 1rem;
 }
 
 .container {
   background-color: white;
-  /*height: 100vh;*/
   margin: 0 auto;
   width: 90%;
 }
@@ -60,7 +64,7 @@ section {
   background-color: blue;
   color: black;
   margin-top: 1rem;
-  padding: 15rem 0;
+  padding: 10rem 3rem;
 }
 
 section.nav {
