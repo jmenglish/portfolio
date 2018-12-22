@@ -85,15 +85,22 @@ section {
   padding: 10rem 3rem;
 }
 
+
 /*specific sections*/
 .nav {
   /*background-color:*/
   grid-area: nav;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
+p {
+color: white;
+text-align: right;
+}
+
+
 .hero {
-  background-color: black;
+  /*background-color: black;*/
   grid-area: hero;
   padding: 20rem 1rem;
 }
@@ -112,6 +119,11 @@ section {
   color: white;
   text-align: center;
   }
+
+.header1 {
+  /*background-color: white;*/
+  grid-area: header1;
+  padding: 2rem 1rem;
 }
 
 .casestudy1 {
@@ -120,19 +132,36 @@ section {
   padding: 20rem 1rem;
 }
 
+h2 {
+color: white;
+text-align: center;
+}
+
 .casestudy2 {
-  /*background-color: */
+  /*background-color: white;*/
   grid-area: casestudy2;
   padding: 20rem 1rem;
 }
 
+h2 {
+color: white;
+text-align: center;
+}
+
+.header2 {
+  /*background-color: white;*/
+  grid-area: header2;
+  padding: 2rem 1rem;
+}
+
 .process {
   grid-area: process;
+  padding: 20rem 1rem;
 }
 
 .footer {
   grid-area: footer;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -159,7 +188,9 @@ section {
     grid-template-areas:
       "nav nav"
       "hero hero"
+      "header1 header1"
       "casestudy1 casestudy2"
+      "header2 header2"
       "process process"
       "footer footer";
     width: 90%;
