@@ -61,7 +61,7 @@ p {
   padding: 1rem;
 }
 
-/*mobiles setup*/
+/*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
   background-color: white;
   display: grid;
@@ -200,7 +200,6 @@ text-align: center;
       "footer footer";
     width: 90%;
     /*980px*/
-    padding-bottom: 100px;
     margin: 0 auto;
   }
 }
