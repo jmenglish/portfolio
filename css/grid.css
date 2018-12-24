@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -70,8 +71,10 @@ p {
   grid-template-areas:
     "nav"
     "hero"
+    "header1"
     "casestudy1"
     "casestudy2"
+    "header2"
     "process"
     "footer";
     margin: 0 auto;
@@ -170,11 +173,13 @@ text-align: center;
   .container {
     grid-template-columns: 6fr 6fr;
     grid-template-areas:
-      "nav nav"
-      "hero hero"
-      "casestudy1 casestudy2"
-      "process process"
-      "footer footer";
+    "nav nav"
+    "hero hero"
+    "header1 header1"
+    "casestudy1 casestudy2"
+    "header2 header2"
+    "process process"
+    "footer footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
