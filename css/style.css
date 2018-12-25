@@ -96,33 +96,3 @@ section.hero {
     text-align: center;
   }
 }
-
-section.casestudy1 {
-
-}
-
-section.casestudy2 {
-
-}
-
-section.footer {
-  padding: 3rem 1rem;
-  text-align: center;
-
-}
-
-
-/*tablet setup; can be written to specific size ex: ipad*/
-@media screen and (min-width: 768px){
-  .container {
-    width: 70rem; /*700px*/
-  }
-}
-
-/*mobile setup; not written to specific size due to varies mobile devices*/
-@media screen and (min-width: 1000px){
-  .container {
-    width: 98rem; /*980px*/
-    margin: 0 auto;
-  }
-}
