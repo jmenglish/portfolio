@@ -117,7 +117,7 @@ section {
 .hero {
   background-color: black;
   grid-area: hero;
-  padding: 20rem 1rem;
+  padding: 30rem 1rem;
 }
 
 .header1 {

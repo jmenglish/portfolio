@@ -110,7 +110,7 @@ section {
 .hero {
   background-color: black;
   grid-area: hero;
-  padding: 10rem 1rem;
+  padding: 30rem 1rem;
 }
 
 /*question 1*/
