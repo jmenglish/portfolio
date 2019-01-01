@@ -84,7 +84,6 @@ p {
   "nav"
   "hero"
   "intro-header"
-  "intro-summary"
   "specs"
   "intro"
   "disc-header"
@@ -134,30 +133,23 @@ section {
   padding: 2rem 3rem;
 }
 
-.intro-summary {
-  background-color: white;
-  grid-area: intro-summary;
-  padding: 5rem 3rem;
-}
-.specs {
-  background-color: white;
-  display: grid;
-  grid-area: specs;
-  padding: 5rem 3rem;
-}
-
 .specs1 {
+  background-color: white;
   grid-area: specs1;
+  padding: 5rem 3rem;
 }
 
 .specs2 {
+  background-color: white;
   grid-area: specs2;
+  padding: 5rem 3rem;
 }
 
 .specs3 {
+  background-color: white;
   grid-area: specs3;
+  padding: 5rem 3rem;
 }
-
 
 .intro {
   background-color: white;
@@ -275,38 +267,31 @@ you can reoder grid two column sectio here.*/
 @media screen and (min-width: 768px) {
   .container {
     background-color: yellow;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "nav nav"
-    "hero hero"
-    "intro-header intro-header"
-    "intro-summary intro-summary"
-    "specs specs"
-    "intro intro"
-    "disc-header disc-header"
-    "research research"
-    "swot swot"
-    "survey survey"
-    "personas personas"
-    "process-header process-header"
-    "sketches sketches"
-    "wireframes wireframes"
-    "design-header design-header"
-    "branding branding"
-    "mockups mockups"
-    "test-header test-header"
-    "user-testing user-testing"
-    "con-header con-header"
-    "conclusion conclusion"
-    "footer footer";
+    "nav            nav             nav"
+    "hero           hero            hero"
+    "intro-header   intro-header    intro-header"
+    "specs1         specs2          specs3"
+    "intro          intro           intro"
+    "disc-header    disc-header     disc-header"
+    "research       research        research"
+    "swot           swot            swot"
+    "survey         survey          survey"
+    "personas       personas        personas"
+    "process-header process-header  process-header"
+    "sketches       sketches        sketches"
+    "wireframes     wireframes      wireframes"
+    "design-header  design-header   design-header"
+    "branding       branding        branding"
+    "mockups        mockups         mockups"
+    "test-header    test-header     test-header"
+    "user-testing   user-testing    user-testing"
+    "con-header     con-header      con-header"
+    "conclusion     conclusion      conclusion"
+    "footer         footer          footer";
     width: 90%;
     margin: 0 auto;
-  }
-
-  .specs {
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-areas:
-    "specs1 specs2 specs3";
   }
 }
 
@@ -315,37 +300,30 @@ you can reoder grid two column sectio here.*/
 @media screen and (min-width: 1000px) {
   .container {
     background-color: pink;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "nav nav"
-    "hero hero"
-    "intro-header intro-header"
-    "intro-summary intro-summary"
-    "specs specs"
-    "intro intro"
-    "disc-header disc-header"
-    "research research"
-    "swot swot"
-    "survey survey"
-    "personas personas"
-    "process-header process-header"
-    "sketches sketches"
-    "wireframes wireframes"
-    "design-header design-header"
-    "branding branding"
-    "mockups mockups"
-    "test-header test-header"
-    "user-testing user-testing"
-    "con-header con-header"
-    "conclusion conclusion"
-    "footer footer";
+    "nav            nav             nav"
+    "hero           hero            hero"
+    "intro-header   intro-header    intro-header"
+    "specs1         specs2          specs3"
+    "intro          intro           intro"
+    "disc-header    disc-header     disc-header"
+    "research       research        research"
+    "swot           swot            swot"
+    "survey         survey          survey"
+    "personas       personas        personas"
+    "process-header process-header  process-header"
+    "sketches       sketches        sketches"
+    "wireframes     wireframes      wireframes"
+    "design-header  design-header   design-header"
+    "branding       branding        branding"
+    "mockups        mockups         mockups"
+    "test-header    test-header     test-header"
+    "user-testing   user-testing    user-testing"
+    "con-header     con-header      con-header"
+    "conclusion     conclusion      conclusion"
+    "footer         footer          footer";
     width: 90%;
     margin: 0 auto;
   }
-
-    .specs {
-      grid-template-columns: 4fr 4fr 4fr;
-      grid-template-areas:
-      "specs1 specs2 specs3";
-    }
 }
