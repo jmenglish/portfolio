@@ -146,19 +146,6 @@ section {
   padding: 5rem 3rem;
 }
 
-.specs1 {
-  grid-area: specs1;
-}
-
-.specs2 {
-  grid-area: specs2;
-}
-
-.specs3 {
-  grid-area: specs3;
-}
-
-
 .intro {
   background-color: white;
   grid-area: intro;
@@ -303,11 +290,6 @@ you can reoder grid two column sectio here.*/
     margin: 0 auto;
   }
 
-  .specs {
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-areas:
-    "specs1 specs2 specs3";
-  }
 }
 
 /*desktop setup; not written to specific size due to varies mobile devices.
@@ -343,9 +325,4 @@ you can reoder grid two column sectio here.*/
     margin: 0 auto;
   }
 
-    .specs {
-      grid-template-columns: 4fr 4fr 4fr;
-      grid-template-areas:
-      "specs1 specs2 specs3";
-    }
 }

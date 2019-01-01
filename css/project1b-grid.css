@@ -1,0 +1,468 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+  /*padding-top: 4rem;*/
+}
+
+/*headers*/
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 4.8rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: center;
+  /*  padding: 1rem;*/
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 3.2rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  /*  padding: 1rem;*/
+}
+
+h3 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2.4rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  /*  padding: 1rem;*/
+}
+
+h4 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  /*padding: 1rem;*/
+}
+
+h5 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  /*padding: 1rem;*/
+}
+
+p {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: left;
+  /*padding: 1rem;*/
+}
+
+/*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
+.container {
+  background-color: white;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  "nav"
+  "hero"
+  "intro-header"
+  "intro-summary"
+  "specs"
+  "intro"
+  "disc-header"
+  "research"
+  "swot"
+  "survey1"
+  "ChartJS1"
+  "ChartJS2"
+  "survey2"
+  "ChartJS3"
+  "ChartJS4"
+  "personas"
+  "img-personas"
+  "process-header"
+  "sketches"
+  "img-mobile-sketches"
+  "img-desktop-sketches"
+  "wireframes"
+  /* "homepage1"
+  "m-homelofi"
+  "d-homelofi"
+  "dashboard1"
+  "m-dashlofi"
+  "d-dashlofi" */
+  "design-header"
+  "branding"
+  "mockups"
+  "test-header"
+  "user-testing"
+  "con-header"
+  "conclusion"
+  "footer";
+    margin: 0 auto;
+}
+
+/*all sections*/
+section {
+  background-color: blue;
+  color: black;
+  /*margin-top: 1rem;*/
+  padding: 10rem 3rem;
+}
+
+/*specific sections*/
+.nav {
+  background-color: white;
+  grid-area: nav;
+  padding: 1rem 1rem;
+}
+
+.hero {
+  background-color: black;
+  grid-area: hero;
+  padding: 30rem 2rem;
+}
+
+/*Introduction*/
+.intro-header {
+  background-color: #668CA3;
+  grid-area: intro-header;
+  padding: 2rem 23rem;
+}
+
+.intro-summary {
+  background-color: white;
+  grid-area: intro-summary;
+  padding: 5rem 3rem;
+}
+.specs {
+  background-color: white;
+  display: grid;
+  grid-area: specs;
+  padding: 5rem 3rem;
+}
+
+/* .specs1 {
+  grid-area: specs1;
+}
+
+.specs2 {
+  grid-area: specs2;
+}
+
+.specs3 {
+  grid-area: specs3;
+} */
+
+
+.intro {
+  background-color: white;
+  grid-area: intro;
+  padding: 10rem 3rem;
+}
+
+/*Discovery*/
+.disc-header {
+  background-color: #668CA3;
+  grid-area: disc-header;
+  padding: 2rem 23rem;
+}
+
+.research {
+  background-color: white;
+  grid-area: research;
+  padding: 10rem 3rem;
+}
+
+.swot {
+  background-color: white;
+  grid-area: swot;
+  padding: 10rem 3rem;
+}
+
+.survey1 {
+  background-color: white;
+  grid-area: survey1;
+  padding: 10rem 3rem;
+}
+
+
+.survey2 {
+  background-color: white;
+  grid-area: survey2;
+  padding: 10rem 3rem;
+}
+
+.ChartJS1 {
+  background-color: white;
+  grid-area: ChartJS1;
+  padding: 10rem 3rem;
+}
+
+.ChartJS2 {
+  background-color: white;
+  grid-area: ChartJS2;
+  padding: 10rem 3rem;
+}
+
+.ChartJS3 {
+  background-color: white;
+  grid-area: ChartJS3;
+  padding: 10rem 3rem;
+}
+
+.ChartJS4 {
+  background-color: white;
+  grid-area: ChartJS4;
+  padding: 10rem 3rem;
+}
+
+.personas {
+  background-color: white;
+  grid-area: personas;
+  padding: 10rem 3rem;
+}
+
+.img-personas {
+  background-color: white;
+  grid-area: img-personas;
+  padding: 10rem 3rem;
+}
+
+
+/*Process*/
+.process-header {
+  background-color: #668CA3;
+  grid-area: process-header;
+  padding: 2rem 23rem;
+}
+
+.sketches {
+  background-color: white;
+  grid-area: sketches;
+  padding: 10rem 3rem;
+}
+
+.img-mobile-sketches {
+  background-color: white;
+  grid-area: img-mobile-sketches;
+  padding: 10rem 3rem;
+}
+
+.img-desktop-sketches {
+  background-color: white;
+  grid-area: img-desktop-sketches;
+  padding: 10rem 3rem;
+}
+
+.wireframes {
+  background-color: white;
+  grid-area: wireframes;
+  padding: 10rem 3rem;
+}
+
+.homepage1 {
+  background-color: white;
+  grid-area: homepage1;
+  padding: 10rem 3rem;
+}
+
+.m-homelofi {
+  background-color: white;
+  grid-area: m-homelofi;
+  padding: 10rem 3rem;
+}
+
+.d-homelofi {
+  background-color: white;
+  grid-area: d-homelofi;
+  padding: 10rem 3rem;
+}
+
+.dashboard1 {
+  background-color: white;
+  grid-area: dashboard1;
+  padding: 10rem 3rem;
+}
+
+.m-dashlofi {
+  background-color: white;
+  grid-area: m-dashlofi;
+  padding: 10rem 3rem;
+}
+
+.d-dashlofi {
+  background-color: white;
+  grid-area: d-dashlofi;
+  padding: 10rem 3rem;
+}
+
+/*Design*/
+.design-header {
+  background-color: #668CA3;
+  grid-area: design-header;
+  padding: 2rem 23rem;
+}
+
+.branding {
+  background-color: white;
+  grid-area: branding;
+  padding: 10rem 3rem;
+}
+
+.mockups {
+  background-color: white;
+  grid-area: mockups;
+  padding: 10rem 3rem;
+}
+
+/*Testing*/
+.test-header {
+  background-color: #668CA3;
+  grid-area: test-header;
+  padding: 2rem 23rem;
+}
+
+.user-testing {
+  background-color: white;
+  grid-area: user-testing;
+  padding: 10rem 3rem;
+}
+
+/*Conclusion*/
+.con-header {
+  background-color: #668CA3;
+  grid-area: con-header;
+  padding: 2rem 23rem;
+}
+
+.conclusion {
+  background-color: white;
+  grid-area: conclusion;
+  padding: 10rem 3rem;
+}
+
+
+/*footer nav and contact info*/
+.footer {
+  background-color: white;
+  grid-area: footer;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+
+/*tablet setup; can be written to specific size ex: ipad.
+you can reoder grid two column sectio here.*/
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: yellow;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    "nav              nav                 nav"
+    "hero             hero                hero"
+    "intro-header     intro-header        intro-header"
+    ".                intro-summary       ."
+    ".                specs               ."
+    ".                intro               ."
+    "disc-header      disc-header         disc-header"
+    ".                research            ."
+    ".                swot                ."
+    ".                survey1             ."
+    ".                ChartJS1            ."
+    ".                ChartJS2            ."
+    ".                survey2             ."
+    ".                ChartJS3            ."
+    ".                ChartJS4            ."
+    ".                personas            ."
+    ".                img-personas        ."
+    "process-header   process-header     process-header"
+    ".                sketches              ."
+    ".                img-mobile-sketches   ."
+    ".                img-desktop-sketches  ."
+    ".                wireframes            ."
+    /* ".                homepage1             ."
+    ".                m-homelofi            ."
+    "                 d-homelofi            ."
+    ".                dashboard1            ."
+    "                 m-dashlofi            ."
+    "                 d-dashlofi            ." */
+    "design-header    design-header         design-header"
+    ".                branding              ."
+    ".                mockups               ."
+    "test-header      test-header           test-header"
+    ".                user-testing          ."
+    "con-header       con-header            con-header"
+    ".                conclusion            ."
+    "footer           footer                footer";
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*desktop setup; not written to specific size due to varies mobile devices.
+you can reoder grid two column sectio here.*/
+@media screen and (min-width: 1000px) {
+  .container {
+    background-color: pink;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    "nav              nav                 nav"
+    "hero             hero                hero"
+    "intro-header     intro-header        intro-header"
+    ".                intro-summary       ."
+    ".                specs               ."
+    ".                intro               ."
+    "disc-header      disc-header         disc-header"
+    ".                research            ."
+    ".                swot                ."
+    ".                survey1             ."
+    ".                ChartJS1            ."
+    ".                ChartJS2            ."
+    ".                survey2             ."
+    ".                ChartJS3            ."
+    ".                ChartJS4            ."
+    ".                personas            ."
+    ".                img-personas        ."
+    "process-header   process-header     process-header"
+    ".                sketches              ."
+    ".                img-mobile-sketches   ."
+    ".                img-desktop-sketches  ."
+    ".                wireframes            ."
+    /* ".                homepage1             ."
+    ".                m-homelofi            ."
+    "                 d-homelofi            ."
+    ".                dashboard1            ."
+    "                 m-dashlofi            ."
+    "                 d-dashlofi            ." */
+    "design-header    design-header         design-header"
+    ".                branding              ."
+    ".                mockups               ."
+    "test-header      test-header           test-header"
+    ".                user-testing          ."
+    "con-header       con-header            con-header"
+    ".                conclusion            ."
+    "footer           footer                footer";
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
