@@ -103,17 +103,25 @@ p {
   "img-mobile-sketches"
   "img-desktop-sketches"
   "wireframes"
-  /* "homepage1"
-  "m-homelofi"
-  "d-homelofi"
+  "homepage1"
+  "home-lofi1"
+  "home-lofi2"
   "dashboard1"
-  "m-dashlofi"
-  "d-dashlofi" */
+  "dash-lofi1"
+  "dash-lofi2"
   "design-header"
   "branding"
   "mockups"
+  "homepage2"
+  "home-hifi1"
+  "home-hifi2"
+  "dashboard2"
+  "dash-hifi1"
+  "dash-hifi2"
   "test-header"
   "user-testing"
+  "img-test1"
+  "img-test2"
   "con-header"
   "conclusion"
   "footer";
@@ -285,15 +293,15 @@ section {
   padding: 10rem 3rem;
 }
 
-.m-homelofi {
+.home-lofi1 {
   background-color: white;
-  grid-area: m-homelofi;
+  grid-area: home-lofi1;
   padding: 10rem 3rem;
 }
 
-.d-homelofi {
+.home-lofi2 {
   background-color: white;
-  grid-area: d-homelofi;
+  grid-area: home-lofi2;
   padding: 10rem 3rem;
 }
 
@@ -303,17 +311,18 @@ section {
   padding: 10rem 3rem;
 }
 
-.m-dashlofi {
+.dash-lofi1 {
   background-color: white;
-  grid-area: m-dashlofi;
+  grid-area: dash-lofi1;
   padding: 10rem 3rem;
 }
 
-.d-dashlofi {
+.dash-lofi2 {
   background-color: white;
-  grid-area: d-dashlofi;
+  grid-area: dash-lofi2;
   padding: 10rem 3rem;
 }
+
 
 /*Design*/
 .design-header {
@@ -334,6 +343,41 @@ section {
   padding: 10rem 3rem;
 }
 
+.homepage2 {
+  background-color: white;
+  grid-area: homepage2;
+  padding: 10rem 3rem;
+}
+
+.home-hifi1 {
+  background-color: white;
+  grid-area: home-hifi1;
+  padding: 10rem 3rem;
+}
+
+.home-hifi2 {
+  background-color: white;
+  grid-area: home-hifi2;
+  padding: 10rem 3rem;
+}
+
+.dashboard2 {
+  background-color: white;
+  grid-area: dashboard2;
+  padding: 10rem 3rem;
+}
+
+.dash-hifi1 {
+  background-color: white;
+  grid-area: dash-hifi1;
+  padding: 10rem 3rem;
+}
+
+.dash-hifi2 {
+  background-color: white;
+  grid-area: dash-hifi2;
+  padding: 10rem 3rem;
+}
 /*Testing*/
 .test-header {
   background-color: #668CA3;
@@ -344,6 +388,18 @@ section {
 .user-testing {
   background-color: white;
   grid-area: user-testing;
+  padding: 10rem 3rem;
+}
+
+.img-test1 {
+  background-color: white;
+  grid-area: img-test1;
+  padding: 10rem 3rem;
+}
+
+.img-test2 {
+  background-color: white;
+  grid-area: img-test2;
   padding: 10rem 3rem;
 }
 
@@ -399,17 +455,25 @@ you can reoder grid two column sectio here.*/
     ".                img-mobile-sketches   ."
     ".                img-desktop-sketches  ."
     ".                wireframes            ."
-    /* ".                homepage1             ."
-    ".                m-homelofi            ."
-    "                 d-homelofi            ."
+    ".                homepage1             ."
+    ".                home-lofi1            ."
+    ".                home-lofi2            ."
     ".                dashboard1            ."
-    "                 m-dashlofi            ."
-    "                 d-dashlofi            ." */
+    ".                dash-lofi1            ."
+    ".                dash-lofi2            ."
     "design-header    design-header         design-header"
     ".                branding              ."
     ".                mockups               ."
+    ".                homepage2             ."
+    ".                home-hifi1            ."
+    ".                home-hifi2            ."
+    ".                dashboard2            ."
+    ".                dash-hifi1            ."
+    ".                dash-hifi2            ."
     "test-header      test-header           test-header"
     ".                user-testing          ."
+    ".                img-test1             ."
+    ".                img-test2             ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
@@ -447,22 +511,29 @@ you can reoder grid two column sectio here.*/
     ".                img-mobile-sketches   ."
     ".                img-desktop-sketches  ."
     ".                wireframes            ."
-    /* ".                homepage1             ."
-    ".                m-homelofi            ."
-    "                 d-homelofi            ."
+    ".                homepage1             ."
+    ".                home-lofi1            ."
+    ".                home-lofi2            ."
     ".                dashboard1            ."
-    "                 m-dashlofi            ."
-    "                 d-dashlofi            ." */
+    ".                dash-lofi1            ."
+    ".                dash-lofi2            ."
     "design-header    design-header         design-header"
     ".                branding              ."
     ".                mockups               ."
+    ".                homepage2             ."
+    ".                home-hifi1            ."
+    ".                home-hifi2            ."
+    ".                dashboard2            ."
+    ".                dash-hifi1            ."
+    ".                dash-hifi2            ."
     "test-header      test-header           test-header"
     ".                user-testing          ."
+    ".                img-test1             ."
+    ".                img-test2             ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
     width: 90%;
     margin: 0 auto;
   }
-
 }
