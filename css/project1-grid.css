@@ -63,6 +63,25 @@ h5 {
   /*padding: 1rem;*/
 }
 
+h6 {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: right;
+  padding: 1rem;
+}
+
+h7 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  line-height: 1.3;
+  text-align: center;
+  /*padding: 1rem;*/
+}
+
 p {
   color: black;
   font-family: sans-serif;
@@ -100,7 +119,7 @@ p {
   "img-personas"
   "process-header"
   "sketches"
-  "img-mobile-sketches"
+  "img-sketches"
   "img-desktop-sketches"
   "wireframes"
   "homepage1"
@@ -140,7 +159,18 @@ section {
 .nav {
   background-color: white;
   grid-area: nav;
+  display: grid;
   padding: 1rem 1rem;
+}
+
+.img-logo {
+  grid-area: img-logo;
+  padding: 1rem;
+}
+
+.nav-info {
+  grid-area: nav-info;
+  padding: 1rem;
 }
 
 .hero {
@@ -155,6 +185,12 @@ section {
   grid-area: intro-header;
   padding: 2rem 23rem;
 }
+
+/* .icon1 {
+    grid-area: icon1;
+    padding: 1rem;
+    margin-top: 2rem;
+} */
 
 .intro-summary {
   background-color: white;
@@ -269,9 +305,9 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.img-mobile-sketches {
+.img-sketches {
   background-color: white;
-  grid-area: img-mobile-sketches;
+  grid-area: img-sketches;
   padding: 10rem 3rem;
 }
 
@@ -422,10 +458,20 @@ section {
 .footer {
   background-color: white;
   grid-area: footer;
+  display: grid;
   padding: 5rem 1rem;
   text-align: center;
 }
 
+.contact-info {
+  grid-area: contact-info;
+  padding: 1rem;
+}
+
+.contact-icon {
+  grid-area: contact-icon;
+  padding: 1rem;
+}
 
 /*tablet setup; can be written to specific size ex: ipad.
 you can reoder grid two column sectio here.*/
@@ -453,7 +499,7 @@ you can reoder grid two column sectio here.*/
     ".                img-personas        ."
     "process-header   process-header     process-header"
     ".                sketches              ."
-    ".                img-mobile-sketches   ."
+    ".                img-sketches          ."
     ".                img-desktop-sketches  ."
     ".                wireframes            ."
     ".                homepage1             ."
@@ -481,8 +527,21 @@ you can reoder grid two column sectio here.*/
     width: 90%;
     margin: 0 auto;
   }
-}
 
+  .nav {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    "img-logo   .   nav-info";
+  }
+
+  .footer {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      contact-info    ."
+    ".      contact-icon    .";
+  }
+
+  }
 /*desktop setup; not written to specific size due to varies mobile devices.
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 1000px) {
@@ -509,7 +568,7 @@ you can reoder grid two column sectio here.*/
     ".                img-personas        ."
     "process-header   process-header     process-header"
     ".                sketches              ."
-    ".                img-mobile-sketches   ."
+    ".                img-sketches          ."
     ".                img-desktop-sketches  ."
     ".                wireframes            ."
     ".                homepage1             ."
@@ -537,4 +596,18 @@ you can reoder grid two column sectio here.*/
     width: 90%;
     margin: 0 auto;
   }
-}
+
+  .nav {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    "img-logo   .   nav-info";
+  }
+
+  .footer {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      contact-info    ."
+    ".      contact-icon    .";
+  }
+
+  }

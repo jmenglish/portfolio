@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="305px" height="608px" viewBox="0 0 305 608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Mobile Sketches</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.7%" y="-1.0%" width="105.4%" height="102.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Final-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop:-Case-Study" transform="translate(-236.000000, -7757.000000)">
+            <g id="Mobile" transform="translate(241.000000, 7760.000000)">
+                <g id="Mobile-Sketches" filter="url(#filter-1)">
+                    <path d="M295,558.581631 C295,580.712333 276.384128,598.651276 253.420436,598.651276 L41.579564,598.651276 C18.6158721,598.651276 0,580.712333 0,558.581631 L0,40.0712981 C0,17.940596 18.6158721,0 41.579564,0 L253.420436,0 C276.384128,0 295,17.940596 295,40.0712981 L295,558.581631 Z" id="Stroke-146" stroke="#1A1919" stroke-width="0.5"></path>
+                    <path d="M129.491279,570.629467 C129.491279,561.04429 137.554041,553.273998 147.5,553.273998 C157.445959,553.273998 165.508721,561.04429 165.508721,570.629467 C165.508721,580.214645 157.445959,587.984936 147.5,587.984936 C137.554041,587.984936 129.491279,580.214645 129.491279,570.629467 Z" id="Stroke-148" stroke="#1A1919" stroke-width="0.5"></path>
+                    <path d="M171.766837,28.6338789 C171.766837,29.8404972 170.751488,30.8190151 169.499453,30.8190151 L125.49986,30.8190151 C124.247826,30.8190151 123.232477,29.8404972 123.232477,28.6338789 C123.232477,27.4272606 124.247826,26.4487427 125.49986,26.4487427 L169.499453,26.4487427 C170.751488,26.4487427 171.766837,27.4272606 171.766837,28.6338789 Z" id="Stroke-150" stroke="#1A1919" stroke-width="0.5"></path>
+                    <path d="M102.381122,28.6338789 C102.381122,31.4719113 99.9936802,33.7744035 97.0471105,33.7744035 C94.1022558,33.7744035 91.714814,31.4719113 91.714814,28.6338789 C91.714814,25.7958465 94.1022558,23.4933543 97.0471105,23.4933543 C99.9936802,23.4933543 102.381122,25.7958465 102.381122,28.6338789 Z" id="Stroke-152" stroke="#1A1919" stroke-width="0.5"></path>
+                    <path d="M99.2808779,28.6338789 C99.2808779,29.8223153 98.2809651,30.785957 97.0477965,30.785957 C95.8146279,30.785957 94.8147151,29.8223153 94.8147151,28.6338789 C94.8147151,27.4454425 95.8146279,26.4818008 97.0477965,26.4818008 C98.2809651,26.4818008 99.2808779,27.4454425 99.2808779,28.6338789 Z" id="Stroke-154" stroke="#1A1919" stroke-width="0.5"></path>
+                    <polygon id="Fill-156" fill="#FFFFFF" points="5.2465407 544.579404 289.755174 544.579404 289.755174 56.8295735 5.2465407 56.8295735"></polygon>
+                    <polygon id="Stroke-158" stroke="#000000" stroke-width="0.5" points="5.2465407 544.579404 289.755174 544.579404 289.755174 56.8295735 5.2465407 56.8295735"></polygon>
+                    <g id="Home" transform="translate(5.145349, 66.116072)">
+                        <rect id="Rectangle-6" fill="#D8D8D8" x="8.5755814" y="421.489957" width="77.1802326" height="47.9341519"></rect>
+                        <rect id="Rectangle-6" fill="#D8D8D8" x="102.906977" y="421.489957" width="77.1802326" height="47.9341519"></rect>
+                        <rect id="Rectangle-6" fill="#D8D8D8" x="197.238372" y="421.489957" width="77.1802326" height="47.9341519"></rect>
+                        <rect id="Rectangle-12" fill="#D8D8D8" x="99.4767442" y="280.993304" width="89.1860465" height="33.0580358"></rect>
+                        <text id="Join" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" letter-spacing="-0.7028572" fill="#4A4A4A">
+                            <tspan x="125.203488" y="301.522322">Join</tspan>
+                        </text>
+                        <text id="Free-Signup" font-family="Roboto-Medium, Roboto" font-size="13" font-weight="400" letter-spacing="-0.761428654" fill="#4A4A4A">
+                            <tspan x="90.9011628" y="261.526228">Free Signup</tspan>
+                        </text>
+                        <text id="Features" font-family="Roboto-Regular, Roboto" font-size="13" font-weight="normal" letter-spacing="-0.761428654" fill="#4A4A4A">
+                            <tspan x="101.19186" y="380.535157">Features</tspan>
+                        </text>
+                        <rect id="Rectangle-3" fill="#F0F0F0" x="1.71511628" y="44.6283484" width="282.994186" height="168.595983"></rect>
+                        <text id="Image" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" letter-spacing="-0.820000052" fill="#4A4A4A">
+                            <tspan x="113.197674" y="132.273438">Image</tspan>
+                        </text>
+                        <g id="Nav-Bar-Copy">
+                            <path d="M244.268666,10.7438616 L270.266218,10.7438616" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+                            <path d="M244.268666,17.3554688 L270.266218,17.3554688" id="Line-3-Copy" stroke="#979797" stroke-linecap="square"></path>
+                            <path d="M244.268666,23.967076 L270.266218,23.967076" id="Line-3-Copy-2" stroke="#979797" stroke-linecap="square"></path>
+                            <path d="M0.85755814,43.8018975 L283.851744,43.8018975" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                            <rect id="Rectangle-12" fill="#D8D8D8" x="12.005814" y="0" width="70.3197674" height="33.0580358" rx="8"></rect>
+                            <text id="LOGO" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" letter-spacing="-0.7028572" fill="#4A4A4A">
+                                <tspan x="22.2965116" y="20.5290179">LOGO</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

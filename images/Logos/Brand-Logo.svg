@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="336px" height="198px" viewBox="0 0 336 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Logos</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.3%" y="-2.6%" width="108.5%" height="107.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-4.3%" y="-2.6%" width="108.5%" height="107.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Final-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop:-Case-Study" transform="translate(-239.000000, -13561.000000)">
+            <g id="Design" transform="translate(0.000000, 12506.000000)">
+                <g id="Branding" transform="translate(243.000000, 200.000000)">
+                    <g id="Logos" transform="translate(0.000000, 857.000000)">
+                        <g id="Sketches/Logos">
+                            <g id="Logo-1-Copy" filter="url(#filter-1)">
+                                <rect id="Rectangle-2" fill="#000000" x="0" y="0" width="164" height="190"></rect>
+                                <text id="space" font-family="Roboto-Medium, Roboto" font-size="24" font-weight="400" letter-spacing="0.452" fill="#FFFFFF">
+                                    <tspan x="47.2078906" y="177">space</tspan>
+                                </text>
+                                <text id="PRISM" font-family="September-Medium, September" font-size="41.099" font-weight="400" fill="#FFFFFF">
+                                    <tspan x="24.9340385" y="149">PRISM</tspan>
+                                </text>
+                                <polygon id="Stroke-2" stroke="#FFFFFF" stroke-width="3" points="28 117 137 117 81.287025 17"></polygon>
+                                <polyline id="Stroke-3" stroke="#FFFFFF" stroke-width="3" points="28 117 81.2923168 80 136 117"></polyline>
+                                <path d="M80,19 L80,80" id="Stroke-4" stroke="#FFFFFF" stroke-width="3"></path>
+                            </g>
+                        </g>
+                        <g id="Sketches/Logos" transform="translate(164.000000, 0.000000)">
+                            <g id="Logo-1" filter="url(#filter-2)">
+                                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="164" height="190"></rect>
+                                <text id="space" font-family="Roboto-Medium, Roboto" font-size="24" font-weight="400" letter-spacing="0.452" fill="#000000">
+                                    <tspan x="47.6498261" y="176">space</tspan>
+                                </text>
+                                <text id="PRISM" font-family="September-Medium, September" font-size="41.099" font-weight="400" fill="#000000">
+                                    <tspan x="24.3533933" y="149">PRISM</tspan>
+                                </text>
+                                <polygon id="Stroke-2" stroke="#000000" stroke-width="3" points="27.5096774 117 136.490323 117 80.7872404 17"></polygon>
+                                <polyline id="Stroke-3" stroke="#000000" stroke-width="3" points="27.5096774 117 80.7637918 80 135.432258 117"></polyline>
+                                <path d="M80.4129032,19 L80.4129032,80" id="Stroke-4" stroke="#000000" stroke-width="3"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
