@@ -18,7 +18,7 @@ h1 {
   font-family: sans-serif;
   font-size: 4.8rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: center;
   /*  padding: 1rem;*/
 }
@@ -28,7 +28,7 @@ h2 {
   font-family: sans-serif;
   font-size: 3.2rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: left;
   /*  padding: 1rem;*/
 }
@@ -38,7 +38,7 @@ h3 {
   font-family: sans-serif;
   font-size: 2.4rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3rem;
   text-align: left;
   /*  padding: 1rem;*/
 }
@@ -48,7 +48,7 @@ h4 {
   font-family: sans-serif;
   font-size: 2rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: left;
   /*padding: 1rem;*/
 }
@@ -58,28 +58,19 @@ h5 {
   font-family: sans-serif;
   font-size: 1.8rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3.5rem;
   text-align: left;
   /*padding: 1rem;*/
 }
 
 h6 {
+  color: #4A4A4A;
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-top: .5rem;
-  line-height: 1.3;
-  text-align: right;
-  padding: 1rem;
-}
-
-h7 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.8rem;
-  margin-top: .5rem;
-  line-height: 1.3;
-  text-align: center;
-  /*padding: 1rem;*/
+  line-height: 3rem;
+  text-align: left;
+  /* padding: 1rem; */
 }
 
 p {
@@ -87,7 +78,7 @@ p {
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3.5rem;
   text-align: left;
   /*padding: 1rem;*/
 }
@@ -102,9 +93,10 @@ p {
   grid-template-areas:
   "nav"
   "hero"
+  "case-content"
+  "case-image"
   "intro-header"
   "intro-summary"
-  "specs"
   "intro"
   "disc-header"
   "research"
@@ -118,30 +110,19 @@ p {
   "personas"
   "img-personas"
   "process-header"
-  "sketches"
-  "img-sketches"
   "iterations"
-  "homepage"
+  "sketches"
+  "img-sketches1"
+  "img-sketches2"
+  "wireframes"
   "home-mobile1"
-  "home-desk1"
-  /* "home-mobile2"
-  "home-mobile3" */
-  /* "dash-desk1" */
-  /* "dash-desk2" */
-  "dashboard"
   "dash-mobile1"
-  /* "dash-mobile2"
-  "dash-mobile3" */
+  "home-desk1"
   "dash-desk1"
-  /* "dash-desk2" */
   "design-header"
-  "branding"
   "product"
   "mobile-hifi1"
-  /* "mobile-hifi2"
-  "mobile-hifi3" */
   "desk-hifi1"
-  /* "desk-hifi2" */
   "test-header"
   "user-testing"
   "test-button"
@@ -158,11 +139,6 @@ section {
   padding: 10rem 3rem;
 }
 
-/* .icon {
- position: relative;
- top: 5px;
- left: 5px;
-} */
 
 .column {
   float: left;
@@ -176,9 +152,6 @@ section {
   clear: both;
   display: table;
 }
-
-
-
 
 /*specific sections*/
 .nav {
@@ -199,10 +172,23 @@ section {
 }
 
 .hero {
-  /* background-color: black; */
+  background-color: #BAC5CB;
   grid-area: hero;
-  padding: 1rem 2rem;
+  display: grid;
+  padding: 5rem 2rem;
 }
+
+/* .case-content {
+  grid-area: case-content;
+  padding: 15rem 5rem;
+} */
+
+.case-image {
+  grid-area: case-image;
+  padding: 5rem 5rem;
+  text-align: center;
+}
+
 
 /*Introduction*/
 .intro-header {
@@ -216,14 +202,6 @@ section {
   background-color: white;
   grid-area: intro-summary;
   padding: 2.5rem 3rem;
-}
-
-.specs {
-  background-color: white;
-  display: grid;
-  grid-area: specs;
-  padding: 2.5rem 3rem;
-  text-align: center;
 }
 
 .intro {
@@ -296,7 +274,7 @@ section {
 .img-personas {
   background-color: white;
   grid-area: img-personas;
-  padding: 10rem 3rem;
+  padding: 2rem 3rem;
 }
 
 
@@ -307,27 +285,35 @@ section {
   padding: 2rem 23rem;
 }
 
-.sketches {
-  background-color: white;
-  grid-area: sketches;
-  padding: 2.5rem 3rem;
-}
-
-.img-sketches {
-  background-color: white;
-  grid-area: img-sketches;
-  padding: 10rem 3rem;
-}
-
 .iterations {
   background-color: white;
   grid-area: iterations;
   padding: 2.5rem 3rem;
 }
 
-.homepage {
+.sketches {
   background-color: white;
-  grid-area: homepage;
+  grid-area: sketches;
+  padding: 2.5rem 3rem;
+}
+
+.img-sketches1 {
+  background-color: white;
+  grid-area: img-sketches1;
+  padding: 1rem 6rem;
+  text-align: center;
+}
+
+.img-sketches2 {
+  background-color: white;
+  grid-area: img-sketches2;
+  padding: 1rem 6rem;
+  text-align: center;
+}
+
+.wireframes {
+  background-color: white;
+  grid-area: wireframes;
   padding: 2.5rem 3rem;
 }
 
@@ -338,80 +324,32 @@ section {
   text-align: center;
 }
 
-/* .home-mobile2 {
+.dash-mobile1 {
   background-color: white;
-  grid-area: home-mobile2;
-  padding: 10rem 3rem;
+  grid-area: dash-mobile1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
-
-.home-mobile3 {
-  background-color: white;
-  grid-area: home-mobile3;
-  padding: 10rem 3rem;
-} */
 
 .home-desk1 {
   background-color: white;
   grid-area: home-desk1;
-  padding: 10rem 6rem;
-text-align: center;
+  padding: 1rem 6rem;
+  text-align: center;
 }
-
-
-/* .home-desk2 {
-  background-color: white;
-  grid-area: home-desk2;
-  padding: 10rem 3rem;
-} */
-
-.dashboard {
-  background-color: white;
-  grid-area: dashboard;
-  padding: 2.5rem 3rem;
-}
-
-.dash-mobile1 {
-  background-color: white;
-  grid-area: dash-mobile1;
-  padding: 10rem 3rem;
-}
-
-/* .dash-mobile2 {
-  background-color: white;
-  grid-area: dash-mobile2;
-  padding: 10rem 3rem;
-}
-
-.dash-mobile3 {
-  background-color: white;
-  grid-area: dash-mobile3;
-  padding: 10rem 3rem;
-} */
 
 .dash-desk1 {
   background-color: white;
   grid-area: dash-desk1;
-  padding: 10rem 3rem;
+  padding: 1rem 6rem;
+  text-align: center;
 }
-
-/* .dash-desk2 {
-  background-color: white;
-  grid-area: dash-desk2;
-  padding: 10rem 3rem;
-} */
-
 
 /*Design*/
 .design-header {
   background-color: #668CA3;
   grid-area: design-header;
   padding: 2rem 23rem;
-}
-
-.branding {
-  background-color: white;
-  grid-area: branding;
-  padding: 2.5rem 3rem;
 }
 
 .product {
@@ -423,32 +361,17 @@ text-align: center;
 .mobile-hifi1 {
   background-color: white;
   grid-area: mobile-hifi1;
-  padding: 10rem 3rem;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-/* .mobile-hifi2 {
-  background-color: white;
-  grid-area: mobile-hifi2;
-  padding: 10rem 3rem;
-}
-
-.mobile-hifi3 {
-  background-color: white;
-  grid-area: mobile-hifi3;
-  padding: 10rem 3rem;
-} */
 
 .desk-hifi1 {
   background-color: white;
   grid-area: desk-hifi1;
-  padding: 10rem 3rem;
+  padding: 1rem 6rem;
+  text-align: center;
 }
-
-/* .desk-hifi2 {
-  background-color: white;
-  grid-area: desk-hifi2;
-  padding: 10rem 3rem;
-} */
 
 /*Testing*/
 .test-header {
@@ -514,7 +437,6 @@ you can reoder grid two column sectio here.*/
     "hero             hero                hero"
     "intro-header     intro-header        intro-header"
     ".                intro-summary       ."
-    ".                specs               ."
     ".                intro               ."
     "disc-header      disc-header         disc-header"
     ".                research            ."
@@ -529,28 +451,18 @@ you can reoder grid two column sectio here.*/
     ".                img-personas        ."
     "process-header   process-header     process-header"
     ".                sketches              ."
-    ".                img-sketches          ."
     ".                iterations            ."
-    ".                homepage              ."
+    ".                img-sketches1         ."
+    ".                img-sketches2         ."
+    ".                wireframes            ."
     ".                home-mobile1          ."
-    /* ".                home-mobile2          ."
-    ".                home-mobile3          ." */
-    ".                home-desk1            ."
-    /* ".                home-desk2            ." */
-    ".                dashboard             ."
     ".                dash-mobile1          ."
-    /* ".                dash-mobile2          ."
-    ".                dash-mobile3          ." */
+    ".                home-desk1            ."
     ".                dash-desk1            ."
-    /* ".                dash-desk2            ." */
     "design-header    design-header         design-header"
-    ".                branding              ."
     ".                product               ."
     ".                mobile-hifi1          ."
-    /* ".                mobile-hifi2          ."
-    ".                mobile-hifi3          ." */
     ".                desk-hifi1            ."
-    /* ".                desk-hifi2            ." */
     "test-header      test-header           test-header"
     ".                user-testing          ."
     ".                test-button           ."
@@ -566,6 +478,20 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     ".   .   nav-info";
   }
+
+  /* .hero {
+    grid-template-columns: 3fr  3fr 3fr 3fr;
+    grid-template-areas:
+    "case-content     case-content      case-image      case-image";
+  } */
+
+  .hero {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      case-image      .";
+  }
+
+
 
   .footer {
     grid-template-columns: 2fr 8fr 2fr;
@@ -586,7 +512,6 @@ you can reoder grid two column sectio here.*/
     "hero             hero                hero"
     "intro-header     intro-header        intro-header"
     ".                intro-summary       ."
-    ".                specs               ."
     ".                intro               ."
     "disc-header      disc-header         disc-header"
     ".                research            ."
@@ -600,29 +525,19 @@ you can reoder grid two column sectio here.*/
     ".                personas            ."
     ".                img-personas        ."
     "process-header   process-header     process-header"
-    ".                sketches              ."
-    ".                img-sketches          ."
     ".                iterations            ."
-    ".                homepage              ."
+    ".                sketches              ."
+    ".                img-sketches1         ."
+    ".                img-sketches2         ."
+    ".                wireframes            ."
     ".                home-mobile1          ."
-    /* ".                home-mobile2          ."
-    ".                home-mobile3          ." */
-    ".                home-desk1            ."
-    /* ".                home-desk2            ." */
-    ".                dashboard             ."
     ".                dash-mobile1          ."
-    /* ".                dash-mobile2          ."
-    ".                dash-mobile3          ." */
+    ".                home-desk1            ."
     ".                dash-desk1            ."
-    /* ".                dash-desk2            ." */
     "design-header    design-header         design-header"
-    ".                branding              ."
     ".                product               ."
     ".                mobile-hifi1          ."
-    /* ".                mobile-hifi2          ."
-    ".                mobile-hifi3          ." */
     ".                desk-hifi1            ."
-    /* ".                desk-hifi2            ." */
     "test-header      test-header           test-header"
     ".                user-testing          ."
     ".                test-button           ."
@@ -638,6 +553,19 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     ".   .   nav-info";
   }
+
+  /* .hero {
+    grid-template-columns: 3fr  3fr 3fr 3fr;
+    grid-template-areas:
+    "case-content     case-content      case-image      case-image";
+  } */
+
+  .hero {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      case-image      .";
+  }
+
 
   .footer {
     grid-template-columns: 2fr 8fr 2fr;

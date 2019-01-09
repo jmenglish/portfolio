@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="364px" viewBox="0 0 174 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Prototype2_Test-A--Desktop-(space-bar)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop:-Case-Study" transform="translate(-185.000000, -7133.000000)">
+            <g id="Process" transform="translate(0.000000, 6666.000000)">
+                <g id="Sketches" transform="translate(186.000000, 200.000000)">
+                    <g id="Mobile-Sketches-1" transform="translate(0.000000, 268.000000)">
+                        <g id="Home">
+                            <path d="M172,337.94 C172,351.329 161.146,362.182 147.757,362.182 L24.243,362.182 C10.854,362.182 0,351.329 0,337.94 L0,24.243 C0,10.854 10.854,0 24.243,0 L147.757,0 C161.146,0 172,10.854 172,24.243 L172,337.94 Z" id="Stroke-146" stroke="#1A1919" stroke-width="0.5"></path>
+                            <path d="M75.5,345.2289 C75.5,339.4299 80.201,334.7289 86,334.7289 C91.799,334.7289 96.5,339.4299 96.5,345.2289 C96.5,351.0279 91.799,355.7289 86,355.7289 C80.201,355.7289 75.5,351.0279 75.5,345.2289 Z" id="Stroke-148" stroke="#1A1919" stroke-width="0.5"></path>
+                            <path d="M100.1488,17.3234 C100.1488,18.0534 99.5568,18.6454 98.8268,18.6454 L73.1728,18.6454 C72.4428,18.6454 71.8508,18.0534 71.8508,17.3234 C71.8508,16.5934 72.4428,16.0014 73.1728,16.0014 L98.8268,16.0014 C99.5568,16.0014 100.1488,16.5934 100.1488,17.3234 Z" id="Stroke-150" stroke="#1A1919" stroke-width="0.5"></path>
+                            <path d="M59.6934,17.3234 C59.6934,19.0404 58.3014,20.4334 56.5834,20.4334 C54.8664,20.4334 53.4744,19.0404 53.4744,17.3234 C53.4744,15.6064 54.8664,14.2134 56.5834,14.2134 C58.3014,14.2134 59.6934,15.6064 59.6934,17.3234 Z" id="Stroke-152" stroke="#1A1919" stroke-width="0.5"></path>
+                            <path d="M57.8858,17.3234 C57.8858,18.0424 57.3028,18.6254 56.5838,18.6254 C55.8648,18.6254 55.2818,18.0424 55.2818,17.3234 C55.2818,16.6044 55.8648,16.0214 56.5838,16.0214 C57.3028,16.0214 57.8858,16.6044 57.8858,17.3234 Z" id="Stroke-154" stroke="#1A1919" stroke-width="0.5"></path>
+                            <polygon id="Fill-156" fill="#FFFFFF" points="3.059 329.4687 168.942 329.4687 168.942 34.3817 3.059 34.3817"></polygon>
+                            <polygon id="Stroke-158" stroke="#000000" stroke-width="0.5" points="3.059 329.4687 168.942 329.4687 168.942 34.3817 3.059 34.3817"></polygon>
+                            <g transform="translate(3.000000, 40.000000)">
+                                <rect id="Rectangle-6" fill="#D8D8D8" x="5" y="255" width="45" height="29"></rect>
+                                <rect id="Rectangle-6" fill="#D8D8D8" x="60" y="255" width="45" height="29"></rect>
+                                <rect id="Rectangle-6" fill="#D8D8D8" x="115" y="255" width="45" height="29"></rect>
+                                <rect id="Rectangle-12" fill="#D8D8D8" x="58" y="170" width="52" height="20"></rect>
+                                <text id="Join" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" letter-spacing="-0.7028572" fill="#4A4A4A">
+                                    <tspan x="73" y="184">Join</tspan>
+                                </text>
+                                <text id="Free-Signup" font-family="Roboto-Medium, Roboto" font-size="13" font-weight="400" letter-spacing="-0.761428654" fill="#4A4A4A">
+                                    <tspan x="53" y="160">Free Signup</tspan>
+                                </text>
+                                <text id="Features" font-family="Roboto-Regular, Roboto" font-size="13" font-weight="normal" letter-spacing="-0.761428654" fill="#4A4A4A">
+                                    <tspan x="59" y="232">Features</tspan>
+                                </text>
+                                <rect id="Rectangle-3" fill="#F0F0F0" x="1" y="27" width="165" height="102"></rect>
+                                <text id="Image" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" letter-spacing="-0.820000052" fill="#4A4A4A">
+                                    <tspan x="66" y="82">Image</tspan>
+                                </text>
+                                <g id="Nav-Bar-Copy">
+                                    <path d="M142.421053,6.5 L157.578947,6.5" id="Line-3" stroke="#979797" stroke-linecap="square"></path>
+                                    <path d="M142.421053,10.5 L157.578947,10.5" id="Line-3-Copy" stroke="#979797" stroke-linecap="square"></path>
+                                    <path d="M142.421053,14.5 L157.578947,14.5" id="Line-3-Copy-2" stroke="#979797" stroke-linecap="square"></path>
+                                    <path d="M0.5,26.5 L165.5,26.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                                    <rect id="Rectangle-12" fill="#D8D8D8" x="7" y="0" width="41" height="20" rx="8"></rect>
+                                    <text id="LOGO" font-family="Roboto-Medium, Roboto" font-size="12" font-weight="400" letter-spacing="-0.7028572" fill="#4A4A4A">
+                                        <tspan x="13" y="14">LOGO</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

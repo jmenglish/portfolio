@@ -6,6 +6,106 @@
       <title>Case Study</title>
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/project1b-grid.css">
+      <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+
   </head>
 
   <body>
@@ -20,8 +120,15 @@
 
       <!--hero unit -->
       <section class="hero">
-        <img src="images/hero-prism.svg" alt="hero case1" style="width:100%"> <!--width="1300" height="900"?-->
-        <!-- Need to rethink header image -->
+        <!-- <div class="case-content">
+        <h1>CASE STUDY</h1>
+        </div> -->
+        <div class ="case-image">
+        <h1>New image? Ex: desktop, ipad, and iphone?</h1>
+        <br>
+        <br>
+        <img src="images/case-image.svg" alt="case1" style="width:50%">
+        </div>
       </section>
 
       <!-- Introduction Section 1 -->
@@ -30,31 +137,24 @@
       </section>
 
       <section class="intro-summary">
-      <h3>Prism Space</h3>
-      <p>Prism Space is a secure Cloud Storage and Organization site that helps minimize the
-        chaos of information by providing a unique space for users to expand their creativity,
-        connect with friends, and easily store and share memories.</p>
-      <br>
+        <h4>CASE STUDY</h4>
+        <br>
+        <h3>Prism Space</h3>
+        <br>
+        <br>
+        <h5><i>“Light doesn’t need a medium to travel through.  It can travel through the vacuum of space.”</i></h5>
+        <br>
+        <br>
+        <h5>Prism Space is a secure Cloud Storage and Organization site that helps minimize the chaos of
+          information by providing a unique space for users to expand their creativity, connect with friends,
+          and easily store and share memories.</h5>
+        <br>
+        <h6><b>MY ROLE</b></h6>
+        <h6>RESEARCH / STRATEGY / DESIGN / USER TESTING</h6>
+        <br>
+        <br>
+        <p>INSERT PORTOTYPE BUTTON HERE!</P>
       </section>
-
-      <section class ="specs">
-        <div class="row">
-        <div class="column">
-          <img src="images/icons/roles-icon.svg" width="30" height="30">&nbsp;<h4>Roles</h4>
-          <p>UX Design<br>Visual Design<br>Brand & Identity</p>
-          <br>
-        </div>
-        <div class="column">
-          <img src="images/icons/del-icon.svg" width="30" height="30">&nbsp;<h4>Deliverables</h4>
-          <p>User Survey<br>Personas<br>Competitive Analysis<br>Concept & Identity</p>
-          <br>
-        </div>
-        <div class="column">
-          <img src="images/icons/specs-icon.svg" width="30" height="30">&nbsp;<h4>Specs</h4>
-          <p>Sketch<br>Invision<br>Adobe Illustrator<br>Usability Hub</p>
-        </div>
-        </div>
-        </section>
 
       <section class ="intro">
         <h3>Problem</h3>
@@ -64,7 +164,8 @@
           documents, and memories.
         </p>
         <br>
-
+        <br>
+        <br>
         <h3>Solution</h3>
         <br>
         <p>The goal for Prism Space is to help users store, organize, and navigate through
@@ -116,19 +217,17 @@
           space and keep information secure.
         </p>
         <br>
+        <h4>Competitor Highlights</h4>
+        <br>
         <p>Participants use of the following competitors;
         </p>
         <br>
         <p> *Insert images of competitors icons and %. Using grid?</p>
         <br>
-        <img src="" alt="">
-        <!-- insert icons and stats of comeptitors-->
-        <br>
-        <h4>Competitor Highlights</h4>
-        <br>
         <p>Users were asked to identify the ways in which they engage with Cloud Storage and Organization Services.
           The next follow-up question drilled in for more specific behaviors.</p>
-        <br>
+
+        <!-- insert icons and stats of comeptitors-->
       </section>
 
       <section class="ChartJS1">
@@ -141,7 +240,7 @@
         <br>
         <p>Disclaimer: Users were able to pick more than one competitor.</p>
         <br>
-      </section> -->
+      </section>
 
 
       <section class="survey2">
@@ -163,7 +262,7 @@
         <br>
         <p>Disclaimer: Users were able to pick more than one competitor.</p>
         <br>
-      </section> -->
+      </section>
 
       <section class ="personas">
         <h3>Personas</h3>
@@ -177,8 +276,66 @@
       </section>
 
       <section class="img-personas">
-        <p>Create Caresoul of images OR add Button to PDF in Personas section?</p>
-        <!-- insert persona images-->
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/persona1.svg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/persona2.svg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/persona3.svg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
       </section>
 
 
@@ -187,8 +344,15 @@
         <h2><img src="images/icons/pro-icon.svg" width="30" height="30"> &nbsp;Process</h2>
       </section>
 
+      <section class="iterations">
+        <h3><b>Design Iterations</b></h3>
+        <br>
+        <p>add paragraph summarizing iterations experience with Sketches and Wireframes</p>
+        <br>
+      </section>
+
       <section class ="sketches">
-        <h3>Sketches</h3>
+        <h4>Sketches</h4>
         <br>
           <p>Sketches help place me in the user's shoes to define the process and journey organically.
             I can quickly erase and scratch out any mistakes before committing to wireframes. I love getting
@@ -197,53 +361,66 @@
         <br>
       </section>
 
-      <section class="img-sketches">
+      <section class="img-sketches1">
         <h5><b>Mobile</b></h5>
-          <p>Insert Caresoul Images of Sketches</p>
-          <img src="" alt="">
-          <p>Link to PDF</p>
-        <br>
+          <p>CHANGE PICS</p>
+          <br>
+          <br>
+          <div class="row">
+          <div class="column">
+          <img src="images/sketches/home-sketches.svg" alt="Sketch" style="width:75%">
+          </div>
+          <div class="column">
+          <img src="images/sketches/signup-sketches.svg" alt="Wireframe" style="width:75%">
+          </div>
+          <div class="column">
+          <img src="images/sketches/dashboard-sketches.svg" alt="Mockup" style="width:75%">
+          </div>
+          </div>
+        </section>
+
+      <section class="img-sketches2">
+        <h5><b>Desktop</b></h5>
+          <p>CHANGE PIC</p>
+          <p>Insert HiFi images of homepage, signup?, and dashboard.</p>
+          <br>
+          <div class="row">
+          <div class="column">
+          <img src="images/sketches/home-sketches2.svg" style="width:100%">
+          </div>
+          <div class="column">
+          <img src="images/sketches/dashboard-sketches2.svg" style="width:100%">
+          </div>
+          <div class="column">
+          <img src="images/sketches/dashboard-sketches2.svg" style="width:100%">
+          </div>
+          </div>
+          <br>
+          <p>Link to PDF to see all?</p>
       </section>
 
-      <section class="iterations">
-        <h3><b>Design Iterations</b></h3>
+      <section class="wireframes">
+        <h4><b>Wireframes</b></h4>
         <br>
         <p>add paragraph summarizing iterations experience</p>
         <br>
-      </section>
-
-      <section class="homepage">
         <h5><b>Homepage</b></h5>
         <br>
         <p>Need to revise the content in this section</p>
         <br>
-          <p>With the home page, two versions were created and tested against each other. In the first version,
-            all of the content was included in a one-page layout to reduce user scrolling, provide company info,
-            product features within view, and entice the user to signup with plan options up front. In the second
-            version, the focus was solely on the product's features and testimonials to entice users to signup.
-            The about and plan/pricing information was moved to a separate page. The preference test showed that
-            a majority of participants preferred a one-page layout regardless of extra scrolling. They wanted to
-            see all content in one location which would minimize clicking, highlight the features, and introduce
-            pricing. With this feedback, the homepage was updated to focus on product features, customer testimonials,
-            and plan details.
-          </p>
+        <p>narrow down content for Homepage</p>
         <br>
-        <p>The wireframes went through many iterations to determine the content to include and in what format
-          that would best serve the user. The iterations underwent preference tests to narrow down the most
-          functional options.
-        </p>
-        </br>
-        <p>The homepage design went through a series of iterations and testing to find the most useful and appealing assets
-          for the product. For example,the hero image underwent preference tests to narrow down a selection that not only
-          spoke to the product but also the users. A significant amount of users selected the final hero image because
-          they felt it was warm, vibrant, and grabbed their attention. But don’t take their word for it.
-          Check out the mockups for yourself!
+        <h5><b>Dashboard</b></h5>
+        <br>
+        <p>Narrow down content for dashboard</p>
         </p>
         <br>
       </section>
 
       <section class="home-mobile1">
-        <h5>Mobile</h5>
+        <h5>HomePage</h5>
+        <p>CHANGE PICS</p>
+        <br>
         <br>
         <div class="row">
         <div class="column">
@@ -258,86 +435,37 @@
         </div>
       </section>
 
-      <!-- <section class="home-mobile2">
-        <p>Insert iPhone homepage Images.</p>
+      <section class="dash-mobile1">
+        <h5>Dashboard</h5>
+        <p>CHANGE PICS</p>
         <br>
+        <br>
+        <div class="row">
+        <div class="column">
+        <img src="images/home-mobile1.svg" alt="Sketch" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-mobile2.svg" alt="Wireframe" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-mobile3.svg" alt="Mockup" style="width:75%">
+        </div>
+        </div>
       </section>
 
-      <section class="home-mobile3">
-        <p>Insert iPhone homepage Images.</p>
-        <br>
-      </section> -->
-
       <section class="home-desk1">
-        <h5>Desktop</h5>
+        <h5>HomePage</h5>
         <br>
         <img src="images/home-desk1.svg" style="width="500" height="700"">
-        <br>
-        <br>
+      </section>
+
+      <section class="dash-desk1">
+        <h5>Dashboard</h5>
+        <p>CHANGE PIC</p>
         <br>
         <img src="images/home-desk2.svg" style="width="500" height="700"">
         <br>
       </section>
-
-      <!-- <section class="home-desk2">
-        <p>Insert Desktop homepage Images</p>
-        <br>
-      </section> -->
-
-    <section class="dashboard">
-      <h5><b>Dashboard</b></h5>
-      <br>
-      <p>The feedback gathered from the Wireframe User Testing was used to improve on and drive the direction of the
-        high-fidelity designs. In this round of iterations, improvements to areas that were inconsistent or did not
-        function well for users were addressed.
-      </p>
-      <br>
-      <p>There were many versions of the dashboard to narrow down how to display the features appropriately.
-        User testing was utilized to find the optimal layout for users to easily access items for sharing or
-        collaborating. A majority of participants stated that all information in view on the dashboard would
-        simplify navigation making it more accessible by reducing unnecessary steps.  Also, it would be easier
-        to organize and find all content within view. These limitations were removed changing the folder structure
-        to give users control of organizing content, naming their content, and by placing all features (upload,
-        create, share, and collaborate) in the immediate view. The design was modified to group actions together
-        in an ellipsis drop-down menu eliminating separate pages.
-      </p>
-      <br>
-      <p>On the dashboard, participants pointed to steps that did not flow naturally and provided improvements
-        to simplify the process. For example, they had trouble organizing an item because the action icon in the
-        ellipsis menu was not clear to them. Hover text was included to clarify each icon. Also, icons were selected
-        to easily identify each file type (word, excel, PDF,etc.).
-      <br>
-        Further refinement to the dashboard included removing the files page and combining all content onto the main
-        page to increase productivity. This simplified the dashboard to include all items in one convenient location
-        and allow the user more control in organizing their content.
-      </p>
-      <br>
-    </section>
-
-    <section class="dash-mobile1">
-      <p>Insert iPhone dashboard image.</p>
-      <br>
-    </section>
-
-    <!-- <section class="dash-mobile2">
-      <p>Insert iPhone dashboard image.</p>
-      <br>
-    </section>
-
-    <section class="dash-mobile3">
-      <p>Insert iPhone dashboard image.</p>
-      <br>
-    </section> -->
-
-    <section class="dash-desk1">
-      <p>Insert Desktop dashboard image.</p>
-      <br>
-    </section>
-
-    <!-- <section class="dash-desk2">
-      <p>Insert Desktop dashboard image.</p>
-      <br>
-    </section> -->
 
 
       <!--Design Section 4 -->
@@ -345,55 +473,51 @@
         <h2><img src="images/icons/des-icon.svg" width="30" height="30"> &nbsp;Design</h2>
       </section>
 
-      <section class ="branding">
-        <p>“Light doesn’t need a medium to travel through.  It can travel through the vacuum of space.”</p>
-        <br>
-        <h3>Branding</h3>
-        <br>
-        <p>The brand for this product was designed with the element of outer space in mind. This quote is a reminder
-          of how fast information can travel in space, at the speed of light. Space is vibrant and appears chaotic
-          but order and structure do exist that keeps all matter growing and evolving around each other. The
-          information we store and create has a similar chaotic feel until the structure that works for us is actualized.
-          Within our organic creativity we find vibrant beauty to bring into existence and share with others.
-        </p>
-        <br>
-        <p>format logo images here with flexbox or grid</p>
-        <!--img src="/images/logos/brand-logos.svg" width="300" height="200"-->
-        <br>
-      </section>
-
       <section class ="product">
-        <h3>Product design</h3>
+        <h3>Final Product</h3>
         <br>
-        <p>content?</p>
+        <p>summary of experience with mockups and final design?</p>
         <br>
         <p>Insert Prototype Button Here</p>
       </section>
 
       <section class="mobile-hifi1">
-          <p>Insert HiFI iPhone images.</p>
+        <h5>Mobile</h5>
+        <p>CHANGE PICS</p>
+        <p>Insert HiFi images of homepage, signup, and dashboard.</p>
         <br>
+        <br>
+        <div class="row">
+        <div class="column">
+        <img src="images/home-mobile1.svg" alt="Sketch" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-mobile2.svg" alt="Wireframe" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-mobile3.svg" alt="Mockup" style="width:75%">
+        </div>
+        </div>
       </section>
-
-      <!-- <section class="mobile-hifi2">
-          <p>Insert HiFI iPhone images.</p>
-        <br>
-      </section>
-
-      <section class="mobile-hifi3">
-          <p>Insert HiFI iPhone images.</p>
-        <br>
-      </section> -->
 
       <section class="desk-hifi1">
-        <p>Insert HiFi Desktop images</p>
+        <h5>Desktop</h5>
         <br>
+        <p>CHANGE PIC</p>
+        <p>Insert HiFi images of homepage, signup, and dashboard.</p>
+        <br>
+        <div class="row">
+        <div class="column">
+        <img src="images/home-desk2.svg" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-desk2.svg" style="width:75%">
+        </div>
+        <div class="column">
+        <img src="images/home-desk2.svg" style="width:75%">
+        </div>
+        </div>
       </section>
-
-      <!-- <section class="desk-hifi2">
-        <p>Insert HiFi Desktop images</p>
-        <br>
-      </section> -->
 
       <!--User Testing Section 5 -->
       <section class="test-header">
@@ -403,11 +527,13 @@
       <section class ="user-testing">
         <h3>Summary</h3>
         <br>
+        <br>
         <p>There were two types of testing performed for this case study: recorded in person or remote and
           UsabilityHub preference tests.User testing for this product was performed for desktop only of both
           the home page and dashboard of this product. In hindsight,testing should have included mobile because
           the participants on the survey frequently used mobile apps such as Google Drive.
         </p>
+        <br>
         <br>
         <h5><b>Remote/In-person Testing</b></h5>
         <br>
@@ -417,12 +543,14 @@
           I could observe the exact areas of the test participants struggled with and ask prompting questions to collect data.
         </p>
         <br>
+        <br>
         <h5><b>Perference Testing</b></h5>
         <br>
         <p>For the Preference Test, participants voted on UsabilityHub for their preferred design. User insight was
           gathered on the content layout, features, or design choices for both the homepage and dashboard. The results
           were very helpful in guiding the evolution of wireframes and in finalizing design choices.
         </p>
+        <br>
         <br>
         <h5><b>Findings</b></h5>
         <br>
@@ -466,9 +594,9 @@
 
 
       <section class="footer">
-        <div class="contact-info">
+        <!-- <div class="contact-info">
         <h7>Contact</h7>
-        </div>
+        </div> -->
         <div class="contact-icon">
         <img src="images/social-media/linkedin.png" width="30" height="30">&nbsp; &nbsp;
         <img src="images/social-media/dribbble.png" width="30" height="30">
