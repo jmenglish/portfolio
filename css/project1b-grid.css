@@ -73,6 +73,16 @@ h6 {
   /* padding: 1rem; */
 }
 
+h7 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 1rem; 
+}
+
 p {
   color: black;
   font-family: sans-serif;
@@ -83,6 +93,12 @@ p {
   /*padding: 1rem;*/
 }
 
+button {
+  background-color: #668CA3;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
   background-color: white;
