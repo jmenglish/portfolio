@@ -123,9 +123,10 @@ p {
   "iterations"
   "homepage"
   "home-mobile1"
+  "home-desk1"
   /* "home-mobile2"
   "home-mobile3" */
-  "dash-desk1"
+  /* "dash-desk1" */
   /* "dash-desk2" */
   "dashboard"
   "dash-mobile1"
@@ -143,8 +144,7 @@ p {
   /* "desk-hifi2" */
   "test-header"
   "user-testing"
-  "img-test1"
-  "img-test2"
+  "test-button"
   "con-header"
   "conclusion"
   "footer";
@@ -153,11 +153,32 @@ p {
 
 /*all sections*/
 section {
-  background-color: blue;
   color: black;
   /*margin-top: 1rem;*/
   padding: 10rem 3rem;
 }
+
+/* .icon {
+ position: relative;
+ top: 5px;
+ left: 5px;
+} */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 
 /*specific sections*/
 .nav {
@@ -178,9 +199,9 @@ section {
 }
 
 .hero {
-  background-color: black;
+  /* background-color: black; */
   grid-area: hero;
-  padding: 30rem 2rem;
+  padding: 1rem 2rem;
 }
 
 /*Introduction*/
@@ -188,6 +209,7 @@ section {
   background-color: #668CA3;
   grid-area: intro-header;
   padding: 2rem 23rem;
+
 }
 
 .intro-summary {
@@ -201,6 +223,7 @@ section {
   display: grid;
   grid-area: specs;
   padding: 2.5rem 3rem;
+  text-align: center;
 }
 
 .intro {
@@ -311,7 +334,7 @@ section {
 .home-mobile1 {
   background-color: white;
   grid-area: home-mobile1;
-  padding: .1rem 3rem;
+  padding: 1rem 6rem;
   text-align: center;
 }
 
@@ -330,8 +353,10 @@ section {
 .home-desk1 {
   background-color: white;
   grid-area: home-desk1;
-  padding: 1rem 3rem;
+  padding: 10rem 6rem;
+text-align: center;
 }
+
 
 /* .home-desk2 {
   background-color: white;
@@ -438,16 +463,11 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.img-test1 {
+.test-button {
   background-color: white;
-  grid-area: img-test1;
-  padding: 10rem 3rem;
-}
-
-.img-test2 {
-  background-color: white;
-  grid-area: img-test2;
-  padding: 10rem 3rem;
+  grid-area: test-button;
+  padding: 2rem 3rem;
+  text-align: center;
 }
 
 /*Conclusion*/
@@ -468,7 +488,7 @@ section {
 .footer {
   background-color: white;
   grid-area: footer;
-  display: grid;
+  /* display: grid; */
   padding: 5rem 1rem;
   text-align: center;
 }
@@ -533,8 +553,7 @@ you can reoder grid two column sectio here.*/
     /* ".                desk-hifi2            ." */
     "test-header      test-header           test-header"
     ".                user-testing          ."
-    ".                img-test1             ."
-    ".                img-test2             ."
+    ".                test-button           ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
@@ -545,7 +564,7 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "img-logo   .   nav-info";
+    ".   .   nav-info";
   }
 
   .footer {
@@ -606,8 +625,7 @@ you can reoder grid two column sectio here.*/
     /* ".                desk-hifi2            ." */
     "test-header      test-header           test-header"
     ".                user-testing          ."
-    ".                img-test1             ."
-    ".                img-test2             ."
+    ".                test-button           ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
@@ -618,7 +636,7 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "img-logo   .   nav-info";
+    ".   .   nav-info";
   }
 
   .footer {
