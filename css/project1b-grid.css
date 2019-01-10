@@ -30,6 +30,7 @@ h2 {
   margin-top: .5rem;
   line-height: 5rem;
   text-align: left;
+  align-content: space-between;
   /*  padding: 1rem;*/
 }
 
@@ -86,11 +87,10 @@ h7 {
 h8 {
   color: #4A4A4A;
   font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
+  font-size: 1.4rem;
   line-height: 3rem;
   text-align: right;
-  font-weight: 500;
+  font-weight: bold;
   /* padding: 1rem; */
 }
 
@@ -210,7 +210,8 @@ section {
   background-color: white;
   grid-area: nav;
   display: grid;
-  padding: 1rem 1rem;
+  padding: 2rem .5rem;
+  text-align: right;
 }
 
 .img-logo {
@@ -227,20 +228,14 @@ section {
   background-color: #BAC5CB;
   grid-area: hero;
   display: grid;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
 }
-
-/* .case-content {
-  grid-area: case-content;
-  padding: 15rem 5rem;
-} */
 
 .case-image {
   grid-area: case-image;
   padding: 5rem 5rem;
   text-align: center;
 }
-
 
 /*Introduction*/
 .intro-header {
@@ -542,8 +537,6 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     ".      case-image      .";
   }
-
-
 
   .footer {
     grid-template-columns: 2fr 8fr 2fr;
