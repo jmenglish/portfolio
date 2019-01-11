@@ -264,6 +264,7 @@ section {
   padding: 2rem 23rem;
 }
 
+
 .research {
   background-color: white;
   grid-area: research;
@@ -543,6 +544,9 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     ".      contact-info    ."
     ".      contact-icon    .";
+  }
+  .disc-header, .intro- {
+    padding: 2rem 15rem !important;
   }
 
   }
