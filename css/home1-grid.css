@@ -27,9 +27,10 @@ h2 {
   color: black;
   font-family: sans-serif;
   font-size: 3.2rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
+  margin-top: 0rem;
+  line-height: 0rem;
+  text-align: left;
+  border-bottom: 3px solid black;
   /*  padding: 1rem;*/
 }
 
@@ -59,7 +60,7 @@ h5 {
   font-size: 1.8rem;
   margin-top: .5rem;
   line-height: 3rem;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -67,14 +68,14 @@ h6 {
   color: black;
   font-family: sans-serif;
   font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: right;
+  margin-top: 1rem;
+  line-height: 2rem;
+  text-align: left;
   padding: 1rem;
 }
 
 h7 {
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-top: .5rem;
@@ -136,7 +137,7 @@ a:active {
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
-  background-color: white;
+  background-color: green;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -144,18 +145,17 @@ a:active {
   grid-template-areas:
     "nav"
     /* "hero" */
-    "casestudy1"
-    "casestudy1-info"
-    "casestudy2"
-    "casestudy2-info"
-    /* "contact" */
+    "case1"
+    "case1-info"
+    "case2"
+    "case2-info"
     "footer"
     margin: 0 auto;
 }
 
 /*all sections*/
 section {
-  background-color: blue;
+  background-color: white;
   color: black;
   /* margin-top: 1rem; */
   padding: 10rem 3rem;
@@ -191,28 +191,9 @@ section {
 
 } */
 
-.casestudy1 {
+.case1 {
   background-color: #CFE9E4;
-  grid-area: casestudy1;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.img-prism {
-  grid-area: img-prism;
-  padding: 2rem;
-}
-
-.casestudy1-info {
-  background-color: white;
-  grid-area: casestudy1-info;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.casestudy2 {
-  background-color: #FFDBDC;
-  grid-area: casestudy2;
+  grid-area: case1;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -222,17 +203,41 @@ section {
   padding: 2rem;
 }
 
-.casestudy2-info, p {
+.case1-info, h2 {
   background-color: white;
-  grid-area: casestudy2-info;
+  grid-area: case1-info;
+  padding: 3rem 0rem;
+  text-align: left;
+}
+
+.case-text1 {
+  grid-area: case-text1;
+  padding: 0rem 2rem;
+}
+
+.case2 {
+  background-color: #FFDBDC;
+  grid-area: case2;
   padding: 2rem 1rem;
   text-align: center;
 }
 
-/* .contact {
-  grid-area: contact;
-  padding: 10rem 1rem;
-} */
+.img-prism {
+  grid-area: img-prism;
+  padding: 2rem;
+}
+
+.case2-info, h2 {
+  background-color: white;
+  grid-area: case2-info;
+  padding: 3rem .5rem;
+  text-align: left;
+}
+
+.case-text2 {
+  grid-area: case-text2;
+  padding: 0rem 2rem;
+}
 
 .footer {
   background-color: white;
@@ -247,7 +252,7 @@ section {
   padding: 1rem;
 } */
 
-.contact-icon {
+/* .contact-icon {
   grid-area: contact-icon;
   padding: 1rem;
   text-align: center;
@@ -257,7 +262,7 @@ section {
   grid-area: outer-footer;
   padding: 1rem;
   text-align: center;
-}
+} */
 
 
 /*need for nav logo and text sizing for mobile?*/
@@ -278,15 +283,14 @@ section {
 /*tablet setup; can be written to specific size ex: ipad*/
 @media screen and (min-width: 768px) {
   .container {
-    /* background-color: yellow; */
+    background-color: yellow;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav            nav             nav             nav"
     /* "hero           hero            hero            hero" */
-    "casestudy1     casestudy1      casestudy1-info      casestudy1-info"
-    "casestudy2     casestudy2      casestudy2-info      casestudy2-info"
-    /* "contact        contact        contact               contact" */
-    "footer         footer          footer               footer";
+    "case1     case1      case1-info      case1-info"
+    "case2     case2      case2-info      case2-info"
+    "footer         footer          footer              footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
@@ -313,24 +317,35 @@ section {
     margin-right: 0px;
   } */
 
-  .casestudy1 {
+  .case1 {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "img-prsim    img-prism     .          .";
+    "img-eco        img-eco         .            .";
   }
 
-  .casestudy2 {
+  .case1-info {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "img-eco       img-eco      .           .";
+    ".        .         case-text1            case-text1";
+  }
+
+  .case2 {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "img-prism      img-prism      .           .";
+  }
+
+  .case2-info {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    ".        .         case-text2            case-text2";
   }
 
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    /* ".      contact-info    contact-info    ." */
-    ".      contact-icon    contact-icon    ."
-    ".      outer-footer    outer-footer    .";
+    ".       contact-icon       contact-icon      ."
+    ".       outer-footer       outer-footer      .";
   }
 
 }
@@ -338,15 +353,14 @@ section {
 /*desktop setup; not written to specific size due to varies mobile devices*/
 @media screen and (min-width: 1000px) {
   .container {
-    /* background-color: pink; */
+    background-color: pink;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav            nav             nav                  nav"
     /* "hero           hero            hero            hero" */
-    "casestudy1     casestudy1      casestudy1-info      casestudy1-info"
-    "casestudy2     casestudy2      casestudy2-info      casestudy2-info"
-    /* "contact        contact         contact              contact" */
-    "footer         footer           footer              footer";
+    "case1     case1      case1-info      case1-info"
+    "case2     case2      case2-info      case2-info"
+    "footer         footer          footer               footer";
     width: 90%;
     /*980px*/
     margin: 0 auto;
@@ -371,24 +385,35 @@ section {
   margin: 0px;
 } */
 
-.casestudy1 {
+.case1 {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-prism     img-prism    .           .";
+  "img-eco        img-eco         .            .";
 }
 
-.casestudy2 {
+.case1-info {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-eco       img-eco      .           .";
+  ".        .         case-text1            case-text1";
+}
+
+.case2 {
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+  "img-prism      img-prism      .           .";
+}
+
+.case2-info {
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-areas:
+  ".        .         case-text2            case-text2";
 }
 
 .footer {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  /* ".      contact-info    contact-info    ." */
-  ".        contact-icon    contact-icon    ."
-  ".        outer-footer    outer-footer    .";
+  ".        contact-icon      contact-icon      ."
+  ".        outer-footer      outer-footer      .";
 }
 
 }
