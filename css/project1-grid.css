@@ -18,7 +18,7 @@ h1 {
   font-family: sans-serif;
   font-size: 4.8rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: center;
   /*  padding: 1rem;*/
 }
@@ -28,8 +28,9 @@ h2 {
   font-family: sans-serif;
   font-size: 3.2rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: left;
+  align-content: space-between;
   /*  padding: 1rem;*/
 }
 
@@ -38,7 +39,7 @@ h3 {
   font-family: sans-serif;
   font-size: 2.4rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3rem;
   text-align: left;
   /*  padding: 1rem;*/
 }
@@ -48,7 +49,7 @@ h4 {
   font-family: sans-serif;
   font-size: 2rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 5rem;
   text-align: left;
   /*padding: 1rem;*/
 }
@@ -58,28 +59,39 @@ h5 {
   font-family: sans-serif;
   font-size: 1.8rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3.5rem;
   text-align: left;
   /*padding: 1rem;*/
 }
 
 h6 {
+  color: black;
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-top: .5rem;
-  line-height: 1.3;
-  text-align: right;
-  padding: 1rem;
+  line-height: 3rem;
+  text-align: left;
+  /* padding: 1rem; */
 }
 
 h7 {
-  color: black;
+  color: white;
   font-family: sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3rem;
   text-align: center;
-  /*padding: 1rem;*/
+  padding: 1rem;
+}
+
+h8 {
+  color: #4A4A4A;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: right;
+  font-weight: bold;
+  /* padding: 1rem; */
 }
 
 p {
@@ -87,9 +99,40 @@ p {
   font-family: sans-serif;
   font-size: 1.6rem;
   margin-top: .5rem;
-  line-height: 1.3;
+  line-height: 3.5rem;
   text-align: left;
   /*padding: 1rem;*/
+}
+
+button {
+  background-color: #668CA3;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
+
+a:link {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
@@ -102,9 +145,10 @@ p {
   grid-template-areas:
   "nav"
   "hero"
+  "case-content"
+  "case-image"
   "intro-header"
   "intro-summary"
-  "specs"
   "intro"
   "disc-header"
   "research"
@@ -118,29 +162,22 @@ p {
   "personas"
   "img-personas"
   "process-header"
+  "iterations"
   "sketches"
-  "img-sketches"
-  "img-desktop-sketches"
+  "img-sketches1"
+  "img-sketches2"
   "wireframes"
-  "homepage1"
-  "home-lofi1"
-  "home-lofi2"
-  "dashboard1"
-  "dash-lofi1"
-  "dash-lofi2"
+  "home-mobile1"
+  "dash-mobile1"
+  "home-desk1"
+  "dash-desk1"
   "design-header"
-  "branding"
-  "mockups"
-  "homepage2"
-  "home-hifi1"
-  "home-hifi2"
-  "dashboard2"
-  "dash-hifi1"
-  "dash-hifi2"
+  "product"
+  "mobile-hifi1"
+  "desk-hifi1"
   "test-header"
   "user-testing"
-  "img-test1"
-  "img-test2"
+  "test-button"
   "con-header"
   "conclusion"
   "footer";
@@ -149,10 +186,23 @@ p {
 
 /*all sections*/
 section {
-  background-color: blue;
   color: black;
   /*margin-top: 1rem;*/
   padding: 10rem 3rem;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*specific sections*/
@@ -160,7 +210,8 @@ section {
   background-color: white;
   grid-area: nav;
   display: grid;
-  padding: 1rem 1rem;
+  padding: 2rem .5rem;
+  text-align: right;
 }
 
 .img-logo {
@@ -174,9 +225,16 @@ section {
 }
 
 .hero {
-  background-color: black;
+  background-color: #BAC5CB;
   grid-area: hero;
-  padding: 30rem 2rem;
+  display: grid;
+  padding: 2rem 2rem;
+}
+
+.case-image {
+  grid-area: case-image;
+  padding: 5rem 5rem;
+  text-align: center;
 }
 
 /*Introduction*/
@@ -184,38 +242,14 @@ section {
   background-color: #668CA3;
   grid-area: intro-header;
   padding: 2rem 23rem;
-}
 
-/* .icon1 {
-    grid-area: icon1;
-    padding: 1rem;
-    margin-top: 2rem;
-} */
+}
 
 .intro-summary {
   background-color: white;
   grid-area: intro-summary;
   padding: 2.5rem 3rem;
 }
-.specs {
-  background-color: white;
-  display: grid;
-  grid-area: specs;
-  padding: 2.5rem 3rem;
-}
-
-/* .specs1 {
-  grid-area: specs1;
-}
-
-.specs2 {
-  grid-area: specs2;
-}
-
-.specs3 {
-  grid-area: specs3;
-} */
-
 
 .intro {
   background-color: white;
@@ -229,6 +263,7 @@ section {
   grid-area: disc-header;
   padding: 2rem 23rem;
 }
+
 
 .research {
   background-color: white;
@@ -247,7 +282,6 @@ section {
   grid-area: survey1;
   padding: 2.5rem 3rem;
 }
-
 
 .survey2 {
   background-color: white;
@@ -288,7 +322,7 @@ section {
 .img-personas {
   background-color: white;
   grid-area: img-personas;
-  padding: 10rem 3rem;
+  padding: 2rem 3rem;
 }
 
 
@@ -299,22 +333,30 @@ section {
   padding: 2rem 23rem;
 }
 
+.iterations {
+  background-color: white;
+  grid-area: iterations;
+  padding: 2.5rem 3rem;
+}
+
 .sketches {
   background-color: white;
   grid-area: sketches;
   padding: 2.5rem 3rem;
 }
 
-.img-sketches {
+.img-sketches1 {
   background-color: white;
-  grid-area: img-sketches;
-  padding: 10rem 3rem;
+  grid-area: img-sketches1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-.img-desktop-sketches {
+.img-sketches2 {
   background-color: white;
-  grid-area: img-desktop-sketches;
-  padding: 10rem 3rem;
+  grid-area: img-sketches2;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
 .wireframes {
@@ -323,42 +365,33 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.homepage1 {
+.home-mobile1 {
   background-color: white;
-  grid-area: homepage1;
-  padding: 2.5rem 3rem;
+  grid-area: home-mobile1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-.home-lofi1 {
+.dash-mobile1 {
   background-color: white;
-  grid-area: home-lofi1;
-  padding: 10rem 3rem;
+  grid-area: dash-mobile1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-.home-lofi2 {
+.home-desk1 {
   background-color: white;
-  grid-area: home-lofi2;
-  padding: 10rem 3rem;
+  grid-area: home-desk1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-.dashboard1 {
+.dash-desk1 {
   background-color: white;
-  grid-area: dashboard1;
-  padding: 2.5rem 3rem;
+  grid-area: dash-desk1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
-
-.dash-lofi1 {
-  background-color: white;
-  grid-area: dash-lofi1;
-  padding: 10rem 3rem;
-}
-
-.dash-lofi2 {
-  background-color: white;
-  grid-area: dash-lofi2;
-  padding: 10rem 3rem;
-}
-
 
 /*Design*/
 .design-header {
@@ -367,52 +400,25 @@ section {
   padding: 2rem 23rem;
 }
 
-.branding {
+.product {
   background-color: white;
-  grid-area: branding;
+  grid-area: product;
   padding: 2.5rem 3rem;
 }
 
-.mockups {
+.mobile-hifi1 {
   background-color: white;
-  grid-area: mockups;
-  padding: 2.5rem 3rem;
+  grid-area: mobile-hifi1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
-.homepage2 {
-  background-color: white;
-  grid-area: homepage2;
-  padding: 2.5rem 3rem;
-}
 
-.home-hifi1 {
+.desk-hifi1 {
   background-color: white;
-  grid-area: home-hifi1;
-  padding: 10rem 3rem;
-}
-
-.home-hifi2 {
-  background-color: white;
-  grid-area: home-hifi2;
-  padding: 10rem 3rem;
-}
-
-.dashboard2 {
-  background-color: white;
-  grid-area: dashboard2;
-  padding: 2.5rem 3rem;
-}
-
-.dash-hifi1 {
-  background-color: white;
-  grid-area: dash-hifi1;
-  padding: 10rem 3rem;
-}
-
-.dash-hifi2 {
-  background-color: white;
-  grid-area: dash-hifi2;
-  padding: 10rem 3rem;
+  grid-area: desk-hifi1;
+  padding: 1rem 6rem;
+  text-align: center;
 }
 
 /*Testing*/
@@ -428,16 +434,11 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.img-test1 {
+.test-button {
   background-color: white;
-  grid-area: img-test1;
-  padding: 10rem 3rem;
-}
-
-.img-test2 {
-  background-color: white;
-  grid-area: img-test2;
-  padding: 10rem 3rem;
+  grid-area: test-button;
+  padding: 2rem 3rem;
+  text-align: center;
 }
 
 /*Conclusion*/
@@ -458,7 +459,7 @@ section {
 .footer {
   background-color: white;
   grid-area: footer;
-  display: grid;
+  /* display: grid; */
   padding: 5rem 1rem;
   text-align: center;
 }
@@ -484,7 +485,6 @@ you can reoder grid two column sectio here.*/
     "hero             hero                hero"
     "intro-header     intro-header        intro-header"
     ".                intro-summary       ."
-    ".                specs               ."
     ".                intro               ."
     "disc-header      disc-header         disc-header"
     ".                research            ."
@@ -499,28 +499,21 @@ you can reoder grid two column sectio here.*/
     ".                img-personas        ."
     "process-header   process-header     process-header"
     ".                sketches              ."
-    ".                img-sketches          ."
-    ".                img-desktop-sketches  ."
+    ".                iterations            ."
+    ".                img-sketches1         ."
+    ".                img-sketches2         ."
     ".                wireframes            ."
-    ".                homepage1             ."
-    ".                home-lofi1            ."
-    ".                home-lofi2            ."
-    ".                dashboard1            ."
-    ".                dash-lofi1            ."
-    ".                dash-lofi2            ."
+    ".                home-mobile1          ."
+    ".                dash-mobile1          ."
+    ".                home-desk1            ."
+    ".                dash-desk1            ."
     "design-header    design-header         design-header"
-    ".                branding              ."
-    ".                mockups               ."
-    ".                homepage2             ."
-    ".                home-hifi1            ."
-    ".                home-hifi2            ."
-    ".                dashboard2            ."
-    ".                dash-hifi1            ."
-    ".                dash-hifi2            ."
+    ".                product               ."
+    ".                mobile-hifi1          ."
+    ".                desk-hifi1            ."
     "test-header      test-header           test-header"
     ".                user-testing          ."
-    ".                img-test1             ."
-    ".                img-test2             ."
+    ".                test-button           ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
@@ -531,7 +524,19 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "img-logo   .   nav-info";
+    ".   .   nav-info";
+  }
+
+  /* .hero {
+    grid-template-columns: 3fr  3fr 3fr 3fr;
+    grid-template-areas:
+    "case-content     case-content      case-image      case-image";
+  } */
+
+  .hero {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      case-image      .";
   }
 
   .footer {
@@ -539,6 +544,9 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     ".      contact-info    ."
     ".      contact-icon    .";
+  }
+  .disc-header, .intro- {
+    padding: 2rem 15rem !important;
   }
 
   }
@@ -553,7 +561,6 @@ you can reoder grid two column sectio here.*/
     "hero             hero                hero"
     "intro-header     intro-header        intro-header"
     ".                intro-summary       ."
-    ".                specs               ."
     ".                intro               ."
     "disc-header      disc-header         disc-header"
     ".                research            ."
@@ -567,29 +574,22 @@ you can reoder grid two column sectio here.*/
     ".                personas            ."
     ".                img-personas        ."
     "process-header   process-header     process-header"
+    ".                iterations            ."
     ".                sketches              ."
-    ".                img-sketches          ."
-    ".                img-desktop-sketches  ."
+    ".                img-sketches1         ."
+    ".                img-sketches2         ."
     ".                wireframes            ."
-    ".                homepage1             ."
-    ".                home-lofi1            ."
-    ".                home-lofi2            ."
-    ".                dashboard1            ."
-    ".                dash-lofi1            ."
-    ".                dash-lofi2            ."
+    ".                home-mobile1          ."
+    ".                dash-mobile1          ."
+    ".                home-desk1            ."
+    ".                dash-desk1            ."
     "design-header    design-header         design-header"
-    ".                branding              ."
-    ".                mockups               ."
-    ".                homepage2             ."
-    ".                home-hifi1            ."
-    ".                home-hifi2            ."
-    ".                dashboard2            ."
-    ".                dash-hifi1            ."
-    ".                dash-hifi2            ."
+    ".                product               ."
+    ".                mobile-hifi1          ."
+    ".                desk-hifi1            ."
     "test-header      test-header           test-header"
     ".                user-testing          ."
-    ".                img-test1             ."
-    ".                img-test2             ."
+    ".                test-button           ."
     "con-header       con-header            con-header"
     ".                conclusion            ."
     "footer           footer                footer";
@@ -600,8 +600,21 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "img-logo   .   nav-info";
+    ".   .   nav-info";
   }
+
+  /* .hero {
+    grid-template-columns: 3fr  3fr 3fr 3fr;
+    grid-template-areas:
+    "case-content     case-content      case-image      case-image";
+  } */
+
+  .hero {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    ".      case-image      .";
+  }
+
 
   .footer {
     grid-template-columns: 2fr 8fr 2fr;
