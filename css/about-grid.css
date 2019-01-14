@@ -70,6 +70,25 @@ h6 {
   padding: 1rem;
 }
 
+h7 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+h8 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: right;
+  /* font-weight: bold; */
+}
+
 p {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -81,7 +100,7 @@ p {
 
 /*mobile setup & order of sections for all devices and sizes. you can reorder sections here.*/
 .container {
-  background-color: white;
+  background-color: green;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -99,7 +118,7 @@ p {
 
 /*all sections*/
 section {
-  background-color: blue;
+  background-color: white;
   color: black;
   margin-top: 1rem;
   padding: 10rem 3rem;
@@ -107,21 +126,25 @@ section {
 
 /*specific sections*/
 .nav {
-  background-color:white;
+  background-color: white;
   grid-area: nav;
   display: grid;
-  padding: 1rem 1rem;
+  padding: .5rem .5rem;
+  text-align: right;
 }
 
-.img-logo {
-  grid-area: img-logo;
-  padding: 1rem;
+/* .nav-left {
+  grid-area: nav-left;
+  padding: 5rem;
+  text-align: left;
+} */
+
+.nav-right {
+  grid-area: nav-right;
+  padding: 3rem 25rem;
+  /* margin-right: 2rem; */
 }
 
-.nav-info {
-  grid-area: nav-info;
-  padding: 1rem;
-}
 
 .hero {
   background-color: white;
@@ -159,87 +182,97 @@ section {
   padding: 1rem 1rem;
 }
 
-/*footer nav and contact info*/
 .footer {
   background-color: white;
   grid-area: footer;
   display: grid;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
-}
 
-.contact-info {
-  grid-area: contact-info;
-  padding: 1rem;
 }
 
 .contact-icon {
   grid-area: contact-icon;
   padding: 1rem;
+  text-align: center;
+}
+
+.outer-footer, h5 {
+  grid-area: outer-footer;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+  .nav-right {
+  padding-right: 80px;
+  text-align: center;
+}
 }
 
 /*tablet setup; can be written to specific size ex: ipad.
 you can reoder grid two column sectio here.*/
-@media screen and (min-width: 768px) {
+@media screen only screen and (max-width: 768px) and (min-width: 999px){
   .container {
-    /* background-color: yellow; */
-    grid-template-columns: 2fr 8fr 2fr;
+    background-color: yellow;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav        nav           nav"
-    "hero       hero          hero"
-    ".          section1      ."
-    ".          section2      ."
-    ".          section3      ."
-    ".          section4      ."
-    "footer     footer        footer";
+    "nav          nav           nav         nav"
+    "hero         hero          hero        hero"
+    ".            section1      section1    ."
+    ".            section2      section2    ."
+    ".            section3      section3    ."
+    ".            section4      section4    ."
+    "footer       footer        footer      footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
   }
 
 .nav {
-  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-columns: 3fr  3fr  3fr  3fr;
   grid-template-areas:
-  "img-logo   .   nav-info";
+  ".      .        nav-right      nav-right";
 }
 
 .footer {
-  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-columns: 3fr  3fr  3fr  3fr;
   grid-template-areas:
-  ".      contact-info    ."
-  ".      contact-icon    .";
-}
+  ".          contact-icon    contact-icon      ."
+  ".          outer-footer    outer-footer      .";
 
+}
 }
 
 /*desktop setup; not written to specific size due to varies mobile devices.
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 1000px) {
   .container {
-    /* background-color: pink; */
-    grid-template-columns: 2fr 8fr 2fr;
+    background-color: pink;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav        nav         nav"
-    "hero       hero        hero"
-    ".          section1    ."
-    ".          section2    ."
-    ".          section3    ."
-    ".          section4    ."
-    "footer     footer      footer";
+    "nav        nav         nav         nav"
+    "hero       hero        hero        hero"
+    ".          section1    section1    ."
+    ".          section2    section2    ."
+    ".          section3    section3    ."
+    ".          section4    section4    ."
+    "footer     footer      footer      footer";
     width: 90%;
-    /*980px*/
+    /*700px*/
     margin: 0 auto;
   }
+
   .nav {
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "img-logo   .   nav-info";
+    ".        .       nav-right       nav-right";
   }
 
   .footer {
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".      contact-info      ."
-    ".      contact-icon      .";
+    ".          contact-icon    contact-icon      ."
+    ".          outer-footer    outer-footer      .";
   }
 }

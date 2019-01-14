@@ -91,7 +91,6 @@ h8 {
   line-height: 3rem;
   text-align: right;
   /* font-weight: bold; */
-  /* padding: 1rem; */
 }
 
 
@@ -143,13 +142,12 @@ a:active {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
-    "nav"
-    /* "hero" */
-    "case1"
-    "case1-info"
-    "case2"
-    "case2-info"
-    "footer"
+  "nav"
+  "case1"
+  "case1-info"
+  "case2"
+  "case2-info"
+  "footer";
     margin: 0 auto;
 }
 
@@ -160,6 +158,19 @@ section {
   /* margin-top: 1rem; */
   padding: 10rem 3rem;
 }
+
+/* .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+} */
+
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 
 /*specific sections*/
 .nav {
@@ -179,9 +190,8 @@ section {
 
 .nav-right {
   grid-area: nav-right;
-  padding: 3rem;
-  /* margin-right: 0rem; */
-  text-align: right;
+  padding: 3rem 25rem;
+  /* margin-right: 2rem; */
 }
 
 /* .hero {
@@ -194,7 +204,7 @@ section {
 .case1 {
   background-color: #CFE9E4;
   grid-area: case1;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
@@ -210,15 +220,16 @@ section {
   text-align: left;
 }
 
-.case-text1 {
-  grid-area: case-text1;
+.case1-text {
+  grid-area: case1-text;
   padding: 0rem 2rem;
 }
+
 
 .case2 {
   background-color: #FFDBDC;
   grid-area: case2;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
@@ -234,25 +245,21 @@ section {
   text-align: left;
 }
 
-.case-text2 {
-  grid-area: case-text2;
+.case2-text {
+  grid-area: case2-text;
   padding: 0rem 2rem;
 }
 
 .footer {
-  background-color: white;
-  grid-area: footer;
-  display: grid;
-  padding: 5rem 1rem;
-  text-align: center;
+background-color: white;
+grid-area: footer;
+display: grid;
+padding: 5rem 1rem;
+text-align: center;
+
 }
 
-/* .contact-info {
-  grid-area: contact-info;
-  padding: 1rem;
-} */
-
-/* .contact-icon {
+.contact-icon {
   grid-area: contact-icon;
   padding: 1rem;
   text-align: center;
@@ -262,35 +269,32 @@ section {
   grid-area: outer-footer;
   padding: 1rem;
   text-align: center;
-} */
+}
 
 
-/*need for nav logo and text sizing for mobile?*/
-/* @media screen and (min-width: 320px) {
-  .img-logo {
-  padding-left: 0px;
-  padding-right: 110px;
-  margin-left: 10px;
+@media only screen and (max-width: 767px) and (min-width: 320px){
+
+  .nav-left{ display:none; }
 
 }
-.nav-info {
-  padding-right: 20px;
-  padding-left: 70px;
-  margin-right: 0px;
+
+  .nav-right {
+  padding-right: 80px;
+  text-align: center;
 }
-} */
+}
+
 
 /*tablet setup; can be written to specific size ex: ipad*/
-@media screen and (min-width: 768px) {
+@media screen only screen and (max-width: 768px) and (min-width: 999px){
   .container {
     background-color: yellow;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav            nav             nav             nav"
-    /* "hero           hero            hero            hero" */
-    "case1     case1      case1-info      case1-info"
-    "case2     case2      case2-info      case2-info"
-    "footer         footer          footer              footer";
+    "nav        nav       nav           nav"
+    "case1      case1     case1-info    case1-info"
+    "case2      case2     case2-info    case2-info"
+    "footer     footer    footer        footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
@@ -299,55 +303,40 @@ section {
   .nav {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav-left     nav-left       nav-right     nav-right";
+    "nav-left      nav-left     nav-right     nav-right";
   }
 
-  /*need for nav logo and text sizing for mobile?*/
-
-  /* .nav-left {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-
-  .nav-right {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-  } */
 
   .case1 {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "img-eco        img-eco         .            .";
+    "img-eco      img-eco   .         .";
   }
 
   .case1-info {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".        .         case-text1            case-text1";
+    ".           .          case1-text      case1-text";
   }
 
   .case2 {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "img-prism      img-prism      .           .";
+    "img-prism       img-prism      .         .";
   }
 
   .case2-info {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".        .         case-text2            case-text2";
+    ".            .         case2-text      case2-text";
   }
 
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".       contact-icon       contact-icon      ."
-    ".       outer-footer       outer-footer      .";
+    ".          contact-icon      contact-icon    ."
+    ".          outer-footer      outer-footer    .";
   }
-
 }
 
 /*desktop setup; not written to specific size due to varies mobile devices*/
@@ -356,11 +345,10 @@ section {
     background-color: pink;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav            nav             nav                  nav"
-    /* "hero           hero            hero            hero" */
-    "case1     case1      case1-info      case1-info"
-    "case2     case2      case2-info      case2-info"
-    "footer         footer          footer               footer";
+    "nav        nav         nav           nav"
+    "case1      case1       case1-info    case1-info"
+    "case2      case2       case2-info    case2-info"
+    "footer     footer      footer        footer";
     width: 90%;
     /*980px*/
     margin: 0 auto;
@@ -369,51 +357,39 @@ section {
 .nav {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "nav-left   nav-left     nav-right   nav-right";
+  "nav-left       nav-left        nav-right       nav-right";
 }
 
-/*need for nav logo and text sizing for mobile?*/
-/* .nav-left {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-top: 10px;
-}
-
-.nav-right {
-  padding: 50px;
-  margin: 0px;
-} */
 
 .case1 {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-eco        img-eco         .            .";
+  "img-eco        img-eco   .       .";
 }
 
 .case1-info {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".        .         case-text1            case-text1";
+  ".              .         case1-text      case1-text";
 }
 
 .case2 {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-prism      img-prism      .           .";
+  "img-prism     img-prism    .         .";
 }
 
-.case2-info {
+.cases2-info {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".        .         case-text2            case-text2";
+  ".            .           case2-text    case2-text";
 }
 
 .footer {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".        contact-icon      contact-icon      ."
-  ".        outer-footer      outer-footer      .";
+  ".        contact-icon     contact-icon   ."
+  ".        outer-footer     outer-footer   .";
 }
 
 }

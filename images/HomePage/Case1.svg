@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="888px" height="729px" viewBox="0 0 888 729" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1323px" height="729px" viewBox="0 0 1323 729" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
     <title>Eco</title>
     <desc>Created with Sketch.</desc>
@@ -67,9 +67,36 @@
             </feMerge>
         </filter>
         <path d="M0.036,69.43 C0.036,107.537 30.929,138.43 69.035,138.43 C107.143,138.43 138.036,107.537 138.036,69.43 C138.036,31.323 107.143,0.43 69.035,0.43 C30.929,0.43 0.036,31.323 0.036,69.43 Z" id="path-13"></path>
+        <filter x="-1.9%" y="-0.7%" width="103.7%" height="102.1%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-5.4%" y="-10.0%" width="110.8%" height="128.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-2.2%" y="-1.8%" width="104.4%" height="105.2%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
     </defs>
     <g id="Eco" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Categories" filter="url(#filter-1)" transform="translate(475.000000, 37.000000)">
+        <g id="Categories" filter="url(#filter-1)" transform="translate(904.000000, 34.000000)">
             <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="375" height="668"></rect>
             <g id="Group-5" transform="translate(0.000000, 32.000000)">
                 <g id="feeding-bottle" transform="translate(127.000000, 402.000000)"></g>
@@ -299,7 +326,7 @@
                 </g>
             </g>
         </g>
-        <g id="Home" filter="url(#filter-11)" transform="translate(51.000000, 37.000000)">
+        <g id="Home" filter="url(#filter-11)" transform="translate(54.000000, 34.000000)">
             <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="375" height="668"></rect>
             <text id="“Be-the-change-you-w" font-family="Roboto-Medium, Roboto" font-size="20" font-weight="400" letter-spacing="-0.351428598" fill="#212121">
                 <tspan x="81.2484601" y="284">“Be the change you want </tspan>
@@ -338,6 +365,45 @@
                     <tspan x="55.5236" y="61.9151437">CO</tspan>
                 </text>
             </g>
+        </g>
+        <g id="Home2" filter="url(#filter-15)" transform="translate(479.000000, 34.000000)">
+            <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="375" height="667"></rect>
+            <g id="Login-Button" filter="url(#filter-16)" transform="translate(123.000000, 521.000000)">
+                <rect id="Rectangle-5" fill="#86CEC1" x="0" y="0" width="130" height="50" rx="5"></rect>
+                <text id="Next" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" letter-spacing="-0.3162857" fill="#FFFFFF">
+                    <tspan x="46" y="31">Next</tspan>
+                </text>
+            </g>
+            <text id="Skip" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" letter-spacing="-0.3162857" fill="#212121">
+                <tspan x="171" y="604">Skip</tspan>
+            </text>
+            <text id="ECO" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="36" font-weight="normal" fill="#009245">
+                <tspan x="148" y="104">ECO</tspan>
+            </text>
+            <g id="Ellipsis" transform="translate(141.000000, 477.000000)">
+                <circle id="Oval" fill="#4A90E2" cx="6" cy="6" r="6"></circle>
+                <circle id="Oval-Copy" fill="#9B9B9B" cx="33" cy="6" r="6"></circle>
+                <circle id="Oval-Copy-2" fill="#9B9B9B" cx="60" cy="6" r="6"></circle>
+                <circle id="Oval-Copy-3" fill="#9B9B9B" cx="87" cy="6" r="6"></circle>
+            </g>
+            <g id="Tutorial-1" filter="url(#filter-17)" transform="translate(30.000000, 182.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="315" height="271"></rect>
+                <text id="Easy-to-follow-tips" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" line-spacing="25" fill="#212121">
+                    <tspan x="26.9331055" y="49">Easy to follow tips and tricks help </tspan>
+                    <tspan x="43.8125" y="74">reduce your carbon footprint. </tspan>
+                </text>
+                <g id="footprint" transform="translate(117.000000, 116.000000)" fill="#49AE3A" fill-rule="nonzero">
+                    <path d="M20.9366205,56.1787845 C33.8602267,61.6592024 39.9246069,73.9136991 35.5971123,85.1803094 C34.8022664,87.2031246 34.0957367,89.2965031 33.5364006,91.3898816 C31.240179,100.798324 34.3312466,112.60592 47.2842915,114.699299 C53.8196915,115.804791 60.3256527,113.781975 64.9180959,109.948035 C78.6071093,98.069876 74.4268084,62.2942723 74.3090535,53.3327305 C74.3090535,49.4047057 74.1912985,45.3825964 72.2483418,41.7133037 C67.8914085,33.4809163 55.6448933,30.1879613 44.7819987,27.9064139 C26.9421232,22.7082493 15.6965251,29.2706381 11.9283665,34.1159861 C8.16020801,38.9613342 5.42240533,49.7340012 20.9366205,56.1787845 Z" id="Shape"></path>
+                    <ellipse id="Oval" cx="9.5" cy="10" rx="9.5" ry="10"></ellipse>
+                    <ellipse id="Oval" cx="31.5" cy="12.5" rx="5.5" ry="6.5"></ellipse>
+                    <ellipse id="Oval" cx="49.5" cy="16.5" rx="4.5" ry="5.5"></ellipse>
+                    <ellipse id="Oval" cx="65" cy="18.5" rx="4" ry="4.5"></ellipse>
+                    <ellipse id="Oval" transform="translate(75.500000, 25.500000) rotate(101.618944) translate(-75.500000, -25.500000) " cx="75.5" cy="25.5" rx="5.5" ry="3.5"></ellipse>
+                </g>
+            </g>
+            <text id="How-do-we-help?" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400" line-spacing="28" letter-spacing="-0.3162857" fill="#212121">
+                <tspan x="122.15144" y="145">How do we help?</tspan>
+            </text>
         </g>
     </g>
 </svg>
