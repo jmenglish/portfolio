@@ -183,17 +183,15 @@ section {
 
 .nav-left {
   grid-area: nav-left;
-  padding: 0rem;
+  padding: 3rem 0rem;
   text-align: left;
 }
 
 .nav-right {
   grid-area: nav-right;
-  padding: 0rem 0rem;
+  padding: 3rem 0rem;
   text-align: right;
 }
-
-
 
 /* .hero {
   background-color: white;
@@ -255,37 +253,27 @@ section {
 .footer {
 background-color: white;
 grid-area: footer;
-display: grid;
 padding: 5rem 1rem;
 text-align: center;
-
 }
 
 .contact-icon {
   grid-area: contact-icon;
   padding: 1rem;
-  text-align: center;
 }
 
 .outer-footer, h5 {
   grid-area: outer-footer;
   padding: 1rem;
-  text-align: center;
 }
 
 
-/* @media only screen and (max-width: 767px) and (min-width: 320px){
-
-  .nav-left{ display:none; }
-
+@media only screen and (max-width: 767px) and (min-width: 320px)
+{
+  .nav-left{
+    display:none;
+  }
 }
-
-  .nav-right {
-  padding-right: 80px;
-  text-align: center;
-}
-} */
-
 
 /*tablet setup; can be written to specific size ex: ipad*/
 @media screen and (min-width: 768px) {
@@ -302,11 +290,11 @@ text-align: center;
     margin: 0 auto;
   }
 
-  /* .nav {
+  .nav {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav-left      nav-left     nav-right     nav-right";
-  } */
+  }
 
 
   .case1 {
@@ -356,11 +344,11 @@ text-align: center;
     margin: 0 auto;
   }
 
-/* .nav {
+.nav {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
   "nav-left       nav-left        nav-right       nav-right";
-} */
+}
 
 
 .case1 {
