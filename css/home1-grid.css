@@ -177,22 +177,23 @@ section {
   background-color: white;
   grid-area: nav;
   display: grid;
+  overflow: hidden;
   padding: .5rem .5rem;
-  text-align: right;
 }
 
 .nav-left {
   grid-area: nav-left;
-  padding: 5rem;
-  /* margin-left: 0rem; */
+  padding: 0rem;
   text-align: left;
 }
 
 .nav-right {
   grid-area: nav-right;
-  padding: 3rem 25rem;
-  /* margin-right: 2rem; */
+  padding: 0rem 0rem;
+  text-align: right;
 }
+
+
 
 /* .hero {
   background-color: white;
@@ -205,12 +206,12 @@ section {
   background-color: #CFE9E4;
   grid-area: case1;
   padding: 5rem 1rem;
-  text-align: center;
 }
 
 .img-eco {
   grid-area: img-eco;
   padding: 2rem;
+  text-align: center;
 }
 
 .case1-info, h2 {
@@ -230,12 +231,13 @@ section {
   background-color: #FFDBDC;
   grid-area: case2;
   padding: 5rem 1rem;
-  text-align: center;
 }
 
 .img-prism {
   grid-area: img-prism;
   padding: 2rem;
+  text-align: center;
+
 }
 
 .case2-info, h2 {
@@ -272,7 +274,7 @@ text-align: center;
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 320px){
+/* @media only screen and (max-width: 767px) and (min-width: 320px){
 
   .nav-left{ display:none; }
 
@@ -282,11 +284,11 @@ text-align: center;
   padding-right: 80px;
   text-align: center;
 }
-}
+} */
 
 
 /*tablet setup; can be written to specific size ex: ipad*/
-@media screen only screen and (max-width: 768px) and (min-width: 999px){
+@media screen and (min-width: 768px) {
   .container {
     background-color: yellow;
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -300,11 +302,11 @@ text-align: center;
     margin: 0 auto;
   }
 
-  .nav {
+  /* .nav {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav-left      nav-left     nav-right     nav-right";
-  }
+  } */
 
 
   .case1 {
@@ -334,8 +336,8 @@ text-align: center;
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".          contact-icon      contact-icon    ."
-    ".          outer-footer      outer-footer    .";
+    ".       contact-icon      contact-icon     ."
+    ".       outer-footer      outer-footer     .";
   }
 }
 
@@ -354,42 +356,41 @@ text-align: center;
     margin: 0 auto;
   }
 
-.nav {
+/* .nav {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
   "nav-left       nav-left        nav-right       nav-right";
-}
+} */
 
 
 .case1 {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-eco        img-eco   .       .";
+  "img-eco        img-eco     .               .";
 }
 
 .case1-info {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".              .         case1-text      case1-text";
+  ".              .           case1-text      case1-text";
 }
 
 .case2 {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  "img-prism     img-prism    .         .";
+  "img-prism     img-prism    .               .";
 }
 
 .cases2-info {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".            .           case2-text    case2-text";
+  ".            .                 case2-text      case2-text";
 }
 
 .footer {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
-  ".        contact-icon     contact-icon   ."
-  ".        outer-footer     outer-footer   .";
-}
-
+  ".            contact-icon     contact-icon     ."
+  ".            outer-footer     outer-footer     .";
+  }
 }

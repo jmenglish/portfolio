@@ -555,11 +555,11 @@ you can reoder grid two column sectio here.*/
     "case-content     case-content      case-image      case-image";
   } */
 
-  .hero {
+  /* .hero {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
     ".      case-image      .";
-  }
+  } */
 
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
