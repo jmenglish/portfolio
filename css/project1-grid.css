@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -20,18 +19,18 @@ h1 {
   margin-top: .5rem;
   line-height: 5rem;
   text-align: center;
-  /*  padding: 1rem;*/
+  font-family: "cabin";
 }
 
 h2 {
-  color: white;
+  color: #668CA3;
   font-family: sans-serif;
   font-size: 3.2rem;
   margin-top: .5rem;
   line-height: 5rem;
   text-align: left;
-  align-content: space-between;
-  /*  padding: 1rem;*/
+  font-family: "cabin";
+  border-bottom: 3px solid #668CA3;
 }
 
 h3 {
@@ -41,7 +40,7 @@ h3 {
   margin-top: .5rem;
   line-height: 3rem;
   text-align: left;
-  /*  padding: 1rem;*/
+  font-family: "cabin";
 }
 
 h4 {
@@ -51,6 +50,7 @@ h4 {
   margin-top: .5rem;
   line-height: 5rem;
   text-align: left;
+  font-family: "cabin";
   /*padding: 1rem;*/
 }
 
@@ -61,7 +61,7 @@ h5 {
   margin-top: .5rem;
   line-height: 3.5rem;
   text-align: left;
-  /*padding: 1rem;*/
+  font-family: "cabin";
 }
 
 h6 {
@@ -71,10 +71,21 @@ h6 {
   margin-top: .5rem;
   line-height: 3rem;
   text-align: left;
-  /* padding: 1rem; */
+  font-family: "cabin";
 }
 
 h7 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "cabin";
+}
+
+h8 {
   color: white;
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -82,16 +93,16 @@ h7 {
   line-height: 3rem;
   text-align: center;
   padding: 1rem;
+  font-family: "cabin";
 }
 
-h8 {
+h9 {
   color: #4A4A4A;
   font-family: sans-serif;
   font-size: 1.4rem;
   line-height: 3rem;
   text-align: right;
-  /* font-weight: bold; */
-  /* padding: 1rem; */
+  font-family: "cabin";
 }
 
 p {
@@ -101,9 +112,10 @@ p {
   margin-top: .5rem;
   line-height: 3.5rem;
   text-align: left;
-  /*padding: 1rem;*/
+  font-family: "lato";
 }
 
+/*button funcationality throughout page*/
 button {
   background-color: #668CA3;
   font-family: sans-serif;
@@ -137,7 +149,7 @@ a:active {
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
-  background-color: white;
+  background-color: green;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -184,6 +196,24 @@ a:active {
     margin: 0 auto;
 }
 
+/*side-by-side images with CSS float property*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+} */
+
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+
+
+
 /*all sections*/
 section {
     background-color: white;
@@ -193,38 +223,34 @@ section {
   }
 }
 
+/*side-by-side images with CSS flex property*/
+.row {
+  display: flex;
+}
 
 .column {
-  float: left;
-  width: 33.33%;
+  flex: 33.33%;
   padding: 5px;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 /*specific sections*/
 .nav {
   background-color: white;
   grid-area: nav;
   display: grid;
+  overflow: hidden;
   padding: .5rem .5rem;
 }
 
 .nav-left {
   grid-area: nav-left;
-  padding: 5rem;
+  padding: 3rem 0rem;
   text-align: left;
 }
 
 .nav-right {
   grid-area: nav-right;
-  padding: 3rem 25rem;
+  padding: 3rem 0rem;
   text-align: right;
 }
 
@@ -236,6 +262,16 @@ section {
 
 }
 
+/*Keep AFTER Nav and Hero sections. side-by-side images with CSS flex property*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 .case-image {
   grid-area: case-image;
   padding: 5rem 5rem;
@@ -244,9 +280,9 @@ section {
 
 /*Introduction*/
 .intro-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: intro-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 
 }
 
@@ -264,9 +300,9 @@ section {
 
 /*Discovery*/
 .disc-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: disc-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 }
 
 
@@ -333,9 +369,9 @@ section {
 
 /*Process*/
 .process-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: process-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 }
 
 .iterations {
@@ -400,9 +436,9 @@ section {
 
 /*Design*/
 .design-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: design-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 }
 
 .product {
@@ -428,9 +464,9 @@ section {
 
 /*Testing*/
 .test-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: test-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 }
 
 .user-testing {
@@ -448,9 +484,9 @@ section {
 
 /*Conclusion*/
 .con-header {
-  background-color: #668CA3;
+  background-color: white;
   grid-area: con-header;
-  padding: 2rem 23rem;
+  padding: 2rem 3rem;
 }
 
 .conclusion {
@@ -464,22 +500,18 @@ section {
 .footer {
 background-color: white;
 grid-area: footer;
-display: grid;
 padding: 5rem 1rem;
 text-align: center;
-
 }
 
 .contact-icon {
   grid-area: contact-icon;
   padding: 1rem;
-  text-align: center;
 }
 
 .outer-footer, h5 {
   grid-area: outer-footer;
   padding: 1rem;
-  text-align: center;
 }
 
 
@@ -491,20 +523,19 @@ text-align: center;
   }
 }
 
-
 /*tablet setup; can be written to specific size ex: ipad.
 you can reoder grid two column sectio here.*/
-@media screen only screen and (max-width: 768px) and (min-width: 999px){
+@media screen and (min-width: 768px) {
   .container {
     background-color: yellow;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
     "nav              nav                 nav"
     "hero             hero                hero"
-    "intro-header     intro-header        intro-header"
+    ".                intro-header        ."
     ".                intro-summary       ."
     ".                intro               ."
-    "disc-header      disc-header         disc-header"
+    ".                disc-header         ."
     ".                research            ."
     ".                swot                ."
     ".                survey1             ."
@@ -515,24 +546,24 @@ you can reoder grid two column sectio here.*/
     ".                ChartJS4            ."
     ".                personas            ."
     ".                img-personas        ."
-    "process-header   process-header     process-header"
-    ".                sketches              ."
-    ".                iterations            ."
-    ".                img-sketches1         ."
-    ".                img-sketches2         ."
-    ".                wireframes            ."
-    ".                home-mobile1          ."
-    ".                dash-mobile1          ."
-    ".                home-desk1            ."
-    ".                dash-desk1            ."
-    "design-header    design-header         design-header"
-    ".                product               ."
-    ".                mobile-hifi1          ."
-    ".                desk-hifi1            ."
-    "test-header      test-header           test-header"
-    ".                user-testing          ."
-    ".                test-button           ."
-    "con-header       con-header            con-header"
+    ".                process-header      ."
+    ".                sketches            ."
+    ".                iterations          ."
+    ".                img-sketches1       ."
+    ".                img-sketches2       ."
+    ".                wireframes          ."
+    ".                home-mobile1        ."
+    ".                dash-mobile1        ."
+    ".                home-desk1          ."
+    ".                dash-desk1          ."
+    ".                design-header       ."
+    ".                product             ."
+    ".                mobile-hifi1        ."
+    ".                desk-hifi1          ."
+    ".                test-header         ."
+    ".                user-testing        ."
+    ".                test-button         ."
+    ".                con-header          ."
     ".                conclusion            ."
     "footer           footer                footer";
     width: 90%;
@@ -544,7 +575,6 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     "nav-left      nav-left     nav-right     nav-right";
   }
-
 
   /* .hero {
     grid-template-columns: 3fr  3fr 3fr 3fr;
@@ -561,9 +591,10 @@ you can reoder grid two column sectio here.*/
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".          contact-icon      contact-icon    ."
-    ".          outer-footer      outer-footer    .";
+    ".       contact-icon      contact-icon     ."
+    ".       outer-footer      outer-footer     .";
   }
+
 }
 
 
@@ -576,10 +607,10 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     "nav              nav                 nav"
     "hero             hero                hero"
-    "intro-header     intro-header        intro-header"
+    ".                intro-header        ."
     ".                intro-summary       ."
     ".                intro               ."
-    "disc-header      disc-header         disc-header"
+    ".                disc-header         ."
     ".                research            ."
     ".                swot                ."
     ".                survey1             ."
@@ -590,24 +621,24 @@ you can reoder grid two column sectio here.*/
     ".                ChartJS4            ."
     ".                personas            ."
     ".                img-personas        ."
-    "process-header   process-header     process-header"
-    ".                iterations            ."
-    ".                sketches              ."
-    ".                img-sketches1         ."
-    ".                img-sketches2         ."
-    ".                wireframes            ."
-    ".                home-mobile1          ."
-    ".                dash-mobile1          ."
-    ".                home-desk1            ."
-    ".                dash-desk1            ."
-    "design-header    design-header         design-header"
-    ".                product               ."
-    ".                mobile-hifi1          ."
-    ".                desk-hifi1            ."
-    "test-header      test-header           test-header"
-    ".                user-testing          ."
-    ".                test-button           ."
-    "con-header       con-header            con-header"
+    ".                process-header      ."
+    ".                sketches            ."
+    ".                iterations          ."
+    ".                img-sketches1       ."
+    ".                img-sketches2       ."
+    ".                wireframes          ."
+    ".                home-mobile1        ."
+    ".                dash-mobile1        ."
+    ".                home-desk1          ."
+    ".                dash-desk1          ."
+    ".                design-header       ."
+    ".                product             ."
+    ".                mobile-hifi1        ."
+    ".                desk-hifi1          ."
+    ".                test-header         ."
+    ".                user-testing        ."
+    ".                test-button         ."
+    ".                con-header          ."
     ".                conclusion            ."
     "footer           footer                footer";
     width: 90%;
@@ -619,7 +650,6 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
     "nav-left      nav-left     nav-right     nav-right";
   }
-
 
   /* .hero {
     grid-template-columns: 3fr  3fr 3fr 3fr;
@@ -636,7 +666,8 @@ you can reoder grid two column sectio here.*/
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".          contact-icon      contact-icon    ."
-    ".          outer-footer      outer-footer    .";
+    ".       contact-icon      contact-icon     ."
+    ".       outer-footer      outer-footer     .";
   }
+
   }
