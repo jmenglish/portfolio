@@ -59,7 +59,7 @@ h5 {
   font-family: sans-serif;
   font-size: 1.8rem;
   margin-top: .5rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
   text-align: left;
   font-family: "cabin";
 }
@@ -157,8 +157,6 @@ a:active {
   grid-template-areas:
   "nav"
   "hero"
-  "case-content"
-  "case-image"
   "intro-header"
   "intro-summary"
   "intro"
@@ -196,29 +194,11 @@ a:active {
     margin: 0 auto;
 }
 
-/*side-by-side images with CSS float property*/
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-/* .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-} */
-
-/* Clear floats after image containers */
-/* .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-
-
 
 /*all sections*/
 section {
     background-color: white;
     color: black;
-    /* margin-top: 1rem; */
     padding: 10rem 3rem;
   }
 }
@@ -232,6 +212,7 @@ section {
   flex: 33.33%;
   padding: 5px;
 }
+
 
 /*specific sections*/
 .nav {
@@ -258,19 +239,10 @@ section {
   background-color: #BAC5CB;
   grid-area: hero;
   /* display: grid; */
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
 
 }
 
-/*Keep AFTER Nav and Hero sections. side-by-side images with CSS flex property*/
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
 
 .case-image {
   grid-area: case-image;
@@ -315,7 +287,19 @@ section {
 .swot {
   background-color: white;
   grid-area: swot;
-  padding: 2.5rem 3rem;
+  padding: 5rem 3rem;
+}
+
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .survey1 {
@@ -324,11 +308,6 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.survey2 {
-  background-color: white;
-  grid-area: survey2;
-  padding: 2.5rem 3rem;
-}
 
 .ChartJS1 {
   background-color: white;
@@ -340,6 +319,12 @@ section {
   background-color: white;
   grid-area: ChartJS2;
   padding: 10rem 3rem;
+}
+
+.survey2 {
+  background-color: white;
+  grid-area: survey2;
+  padding: 2.5rem 3rem;
 }
 
 .ChartJS3 {
@@ -547,8 +532,8 @@ you can reoder grid two column sectio here.*/
     ".                personas            ."
     ".                img-personas        ."
     ".                process-header      ."
-    ".                sketches            ."
     ".                iterations          ."
+    ".                sketches            ."
     ".                img-sketches1       ."
     ".                img-sketches2       ."
     ".                wireframes          ."
@@ -576,11 +561,6 @@ you can reoder grid two column sectio here.*/
     "nav-left      nav-left     nav-right     nav-right";
   }
 
-  /* .hero {
-    grid-template-columns: 3fr  3fr 3fr 3fr;
-    grid-template-areas:
-    "case-content     case-content      case-image      case-image";
-  } */
 
   .hero {
     grid-template-columns: 2fr 8fr 2fr;
@@ -622,8 +602,8 @@ you can reoder grid two column sectio here.*/
     ".                personas            ."
     ".                img-personas        ."
     ".                process-header      ."
-    ".                sketches            ."
     ".                iterations          ."
+    ".                sketches            ."
     ".                img-sketches1       ."
     ".                img-sketches2       ."
     ".                wireframes          ."
@@ -651,11 +631,6 @@ you can reoder grid two column sectio here.*/
     "nav-left      nav-left     nav-right     nav-right";
   }
 
-  /* .hero {
-    grid-template-columns: 3fr  3fr 3fr 3fr;
-    grid-template-areas:
-    "case-content     case-content      case-image      case-image";
-  } */
 
   .hero {
     grid-template-columns: 2fr 8fr 2fr;
