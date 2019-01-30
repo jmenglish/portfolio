@@ -58,7 +58,7 @@ h5 {
   color: black;
   font-family: sans-serif;
   font-size: 1.8rem;
-  margin-top: .5rem;
+  margin-top: 0rem;
   line-height: 3rem;
   text-align: left;
   font-family: "cabin";
@@ -155,52 +155,50 @@ a:active {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
-  "nav"
-  "hero"
-  "intro-header"
-  "intro-summary"
-  "intro"
-  "disc-header"
-  "research"
-  "swot"
-  "survey1"
-  "ChartJS1"
-  "ChartJS2"
-  "survey2"
-  "ChartJS3"
-  "ChartJS4"
-  "personas"
-  "img-personas"
-  "process-header"
-  "iterations"
-  "sketches"
-  "img-sketches1"
-  "img-sketches2"
-  "wireframes"
-  "home-mobile1"
-  "dash-mobile1"
-  "home-desk1"
-  "dash-desk1"
-  "design-header"
-  "product"
-  "mobile-hifi1"
-  "desk-hifi1"
-  "test-header"
-  "user-testing"
-  "test-button"
-  "con-header"
-  "conclusion"
-  "footer";
-    margin: 0 auto;
+    "nav"
+    "hero"
+    "intro-header"
+    "intro-summary"
+    "intro"
+    "disc-header"
+    "research"
+    "swot"
+    "survey1"
+    "ChartJS1"
+    "ChartJS2"
+    "survey2"
+    "ChartJS3"
+    "ChartJS4"
+    "personas"
+    "img-personas"
+    "process-header"
+    "iterations"
+    "sketches"
+    "img-sketches1"
+    "img-sketches2"
+    "wireframes"
+    "home-mobile1"
+    "dash-mobile1"
+    "home-desk1"
+    "dash-desk1"
+    "design-header"
+    "product"
+    "mobile-hifi1"
+    "desk-hifi1"
+    "test-header"
+    "user-testing"
+    "test-button"
+    "con-header"
+    "conclusion"
+    "footer";
+  margin: 0 auto;
 }
-
 
 /*all sections*/
 section {
-    background-color: white;
-    color: black;
-    padding: 10rem 3rem;
-  }
+  background-color: white;
+  color: black;
+  padding: 10rem 3rem;
 }
 
 /*side-by-side images with CSS flex property*/
@@ -212,7 +210,6 @@ section {
   flex: 33.33%;
   padding: 5px;
 }
-
 
 /*specific sections*/
 .nav {
@@ -240,9 +237,7 @@ section {
   grid-area: hero;
   /* display: grid; */
   padding: 2rem 0rem;
-
 }
-
 
 .case-image {
   grid-area: case-image;
@@ -255,7 +250,6 @@ section {
   background-color: white;
   grid-area: intro-header;
   padding: 2rem 3rem;
-
 }
 
 .intro-summary {
@@ -277,7 +271,6 @@ section {
   padding: 2rem 3rem;
 }
 
-
 .research {
   background-color: white;
   grid-area: research;
@@ -290,16 +283,22 @@ section {
   padding: 5rem 3rem;
 }
 
-
 .flex-container1 {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: left;
+  justify-content: center;
+}
 
+h5 {
+  margin: 1rem;
+}
+
+p {
+  margin: 1rem;
 }
 
 .flex-container2 {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: left;
+  justify-content: center;
 }
 
 .survey1 {
@@ -307,7 +306,6 @@ section {
   grid-area: survey1;
   padding: 2.5rem 3rem;
 }
-
 
 .ChartJS1 {
   background-color: white;
@@ -351,7 +349,6 @@ section {
   padding: 2rem 3rem;
 }
 
-
 /*Process*/
 .process-header {
   background-color: white;
@@ -374,14 +371,14 @@ section {
 .img-sketches1 {
   background-color: white;
   grid-area: img-sketches1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
 .img-sketches2 {
   background-color: white;
   grid-area: img-sketches2;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -394,28 +391,28 @@ section {
 .home-mobile1 {
   background-color: white;
   grid-area: home-mobile1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
 .dash-mobile1 {
   background-color: white;
   grid-area: dash-mobile1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
 .home-desk1 {
   background-color: white;
   grid-area: home-desk1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
 .dash-desk1 {
   background-color: white;
   grid-area: dash-desk1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -435,15 +432,14 @@ section {
 .mobile-hifi1 {
   background-color: white;
   grid-area: mobile-hifi1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
-
 
 .desk-hifi1 {
   background-color: white;
   grid-area: desk-hifi1;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -480,13 +476,12 @@ section {
   padding: 2.5rem 3rem;
 }
 
-
 /*footer nav and contact info*/
 .footer {
-background-color: white;
-grid-area: footer;
-padding: 5rem 1rem;
-text-align: center;
+  background-color: white;
+  grid-area: footer;
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 .contact-icon {
@@ -494,17 +489,13 @@ text-align: center;
   padding: 1rem;
 }
 
-.outer-footer, h5 {
+.outer-footer {
   grid-area: outer-footer;
-  padding: 1rem;
 }
 
-
-
-@media only screen and (max-width: 767px) and (min-width: 320px)
-{
-  .nav-left{
-    display:none;
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .nav-left {
+    display: none;
   }
 }
 
@@ -515,42 +506,42 @@ you can reoder grid two column sectio here.*/
     background-color: yellow;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "nav              nav                 nav"
-    "hero             hero                hero"
-    ".                intro-header        ."
-    ".                intro-summary       ."
-    ".                intro               ."
-    ".                disc-header         ."
-    ".                research            ."
-    ".                swot                ."
-    ".                survey1             ."
-    ".                ChartJS1            ."
-    ".                ChartJS2            ."
-    ".                survey2             ."
-    ".                ChartJS3            ."
-    ".                ChartJS4            ."
-    ".                personas            ."
-    ".                img-personas        ."
-    ".                process-header      ."
-    ".                iterations          ."
-    ".                sketches            ."
-    ".                img-sketches1       ."
-    ".                img-sketches2       ."
-    ".                wireframes          ."
-    ".                home-mobile1        ."
-    ".                dash-mobile1        ."
-    ".                home-desk1          ."
-    ".                dash-desk1          ."
-    ".                design-header       ."
-    ".                product             ."
-    ".                mobile-hifi1        ."
-    ".                desk-hifi1          ."
-    ".                test-header         ."
-    ".                user-testing        ."
-    ".                test-button         ."
-    ".                con-header          ."
-    ".                conclusion            ."
-    "footer           footer                footer";
+      "nav              nav                 nav"
+      "hero             hero                hero"
+      ".                intro-header        ."
+      ".                intro-summary       ."
+      ".                intro               ."
+      ".                disc-header         ."
+      ".                research            ."
+      ".                swot                ."
+      ".                survey1             ."
+      ".                ChartJS1            ."
+      ".                ChartJS2            ."
+      ".                survey2             ."
+      ".                ChartJS3            ."
+      ".                ChartJS4            ."
+      ".                personas            ."
+      ".                img-personas        ."
+      ".                process-header      ."
+      ".                iterations          ."
+      ".                sketches            ."
+      ".                img-sketches1       ."
+      ".                img-sketches2       ."
+      ".                wireframes          ."
+      ".                home-mobile1        ."
+      ".                dash-mobile1        ."
+      ".                home-desk1          ."
+      ".                dash-desk1          ."
+      ".                design-header       ."
+      ".                product             ."
+      ".                mobile-hifi1        ."
+      ".                desk-hifi1          ."
+      ".                test-header         ."
+      ".                user-testing        ."
+      ".                test-button         ."
+      ".                con-header          ."
+      ".                conclusion            ."
+      "footer           footer                footer";
     width: 90%;
     margin: 0 auto;
   }
@@ -558,25 +549,30 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav-left      nav-left     nav-right     nav-right";
+      "nav-left      nav-left     nav-right     nav-right";
   }
-
 
   .hero {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    ".      case-image      .";
+      ".      case-image      .";
+  }
+
+  .flex-container1 {
+    flex-wrap: nowrap;
+  }
+
+  .flex-container2 {
+    flex-wrap: nowrap;
   }
 
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".       contact-icon      contact-icon     ."
-    ".       outer-footer      outer-footer     .";
+      ".       contact-icon      contact-icon     ."
+      ".       outer-footer      outer-footer     .";
   }
-
 }
-
 
 /*desktop setup; not written to specific size due to varies mobile devices.
 you can reoder grid two column sectio here.*/
@@ -585,42 +581,42 @@ you can reoder grid two column sectio here.*/
     background-color: pink;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    "nav              nav                 nav"
-    "hero             hero                hero"
-    ".                intro-header        ."
-    ".                intro-summary       ."
-    ".                intro               ."
-    ".                disc-header         ."
-    ".                research            ."
-    ".                swot                ."
-    ".                survey1             ."
-    ".                ChartJS1            ."
-    ".                ChartJS2            ."
-    ".                survey2             ."
-    ".                ChartJS3            ."
-    ".                ChartJS4            ."
-    ".                personas            ."
-    ".                img-personas        ."
-    ".                process-header      ."
-    ".                iterations          ."
-    ".                sketches            ."
-    ".                img-sketches1       ."
-    ".                img-sketches2       ."
-    ".                wireframes          ."
-    ".                home-mobile1        ."
-    ".                dash-mobile1        ."
-    ".                home-desk1          ."
-    ".                dash-desk1          ."
-    ".                design-header       ."
-    ".                product             ."
-    ".                mobile-hifi1        ."
-    ".                desk-hifi1          ."
-    ".                test-header         ."
-    ".                user-testing        ."
-    ".                test-button         ."
-    ".                con-header          ."
-    ".                conclusion            ."
-    "footer           footer                footer";
+      "nav              nav                 nav"
+      "hero             hero                hero"
+      ".                intro-header        ."
+      ".                intro-summary       ."
+      ".                intro               ."
+      ".                disc-header         ."
+      ".                research            ."
+      ".                swot                ."
+      ".                survey1             ."
+      ".                ChartJS1            ."
+      ".                ChartJS2            ."
+      ".                survey2             ."
+      ".                ChartJS3            ."
+      ".                ChartJS4            ."
+      ".                personas            ."
+      ".                img-personas        ."
+      ".                process-header      ."
+      ".                iterations          ."
+      ".                sketches            ."
+      ".                img-sketches1       ."
+      ".                img-sketches2       ."
+      ".                wireframes          ."
+      ".                home-mobile1        ."
+      ".                dash-mobile1        ."
+      ".                home-desk1          ."
+      ".                dash-desk1          ."
+      ".                design-header       ."
+      ".                product             ."
+      ".                mobile-hifi1        ."
+      ".                desk-hifi1          ."
+      ".                test-header         ."
+      ".                user-testing        ."
+      ".                test-button         ."
+      ".                con-header          ."
+      ".                conclusion            ."
+      "footer           footer                footer";
     width: 90%;
     margin: 0 auto;
   }
@@ -628,21 +624,27 @@ you can reoder grid two column sectio here.*/
   .nav {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav-left      nav-left     nav-right     nav-right";
+      "nav-left      nav-left     nav-right     nav-right";
   }
-
 
   .hero {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
-    ".      case-image      .";
+      ".      case-image      .";
+  }
+
+  .flex-container1 {
+    flex-wrap: nowrap;
+  }
+
+  .flex-container2 {
+    flex-wrap: nowrap;
   }
 
   .footer {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    ".       contact-icon      contact-icon     ."
-    ".       outer-footer      outer-footer     .";
+      ".       contact-icon      contact-icon     ."
+      ".       outer-footer      outer-footer     .";
   }
-
-  }
+}
