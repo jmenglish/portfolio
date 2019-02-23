@@ -95,7 +95,7 @@ h8 {
   font-family: sans-serif;
   font-size: 1.4rem;
   line-height: 3rem;
-  text-align: right;
+  text-align: left;
   font-family: "cabin";
 }
 
@@ -151,9 +151,9 @@ a:active {
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
   "nav"
-  "contact"
+  "contact-form"
   "footer";
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /*all sections*/
@@ -185,10 +185,10 @@ section {
   text-align: right;
 }
 
-.contact {
+.contact-form {
   background-color: white;
-  grid-area: contact;
-  padding: 5rem 1rem;
+  grid-area: contact-form;
+  padding: 1rem 1rem;
 }
 
 .footer {
@@ -222,9 +222,9 @@ you can reoder grid two column sectio here.*/
     background-color: yellow;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav        nav         nav         nav"
-    ".          contact    contact    ."
-    "footer     footer      footer      footer";
+    "nav        nav             nav             nav"
+    ".          contact-form    contact-form    ."
+    "footer     footer          footer          footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
@@ -253,9 +253,9 @@ you can reoder grid two column sectio here.*/
     background-color: pink;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav        nav         nav         nav"
-    ".          contact    contact    ."
-    "footer     footer      footer      footer";
+    "nav        nav              nav              nav"
+    ".          contact-form     contact-form     ."
+    "footer     footer           footer           footer";
     width: 90%;
     /*700px*/
     margin: 0 auto;
