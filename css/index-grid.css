@@ -289,9 +289,9 @@ text-align: center;
     background-color: yellow;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
-    "nav        nav       nav           nav"
-    "case1      case1     case1-info    case1-info"
-    "case2      case2     case2-info    case2-info"
+    "nav          nav         nav           nav"
+    "case1        case1       case2         case2"
+    "case1-info   case1-info  case2-info    case2-info"
     "footer     footer    footer        footer";
     width: 90%;
     /*700px*/
@@ -302,31 +302,6 @@ text-align: center;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav-left      nav-left     nav-right     nav-right";
-  }
-
-
-  .case1 {
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-    "img-eco      img-eco   .         .";
-  }
-
-  .case1-info {
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-    ".           .          case1-text      case1-text";
-  }
-
-  .case2 {
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-    "img-prism       img-prism      .         .";
-  }
-
-  .case2-info {
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-areas:
-    ".            .         case2-text      case2-text";
   }
 
   .footer {
@@ -344,8 +319,8 @@ text-align: center;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav           nav"
-    "case1      case1       case1-info    case1-info"
-    "case2      case2       case2-info    case2-info"
+    "case1        case1       case2         case2"
+    "case1-info   case1-info  case2-info    case2-info"
     "footer     footer      footer        footer";
     width: 90%;
     /*980px*/
@@ -356,31 +331,6 @@ text-align: center;
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-template-areas:
   "nav-left       nav-left        nav-right       nav-right";
-}
-
-
-.case1 {
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-template-areas:
-  "img-eco        img-eco     .               .";
-}
-
-.case1-info {
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-template-areas:
-  ".              .           case1-text      case1-text";
-}
-
-.case2 {
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-template-areas:
-  "img-prism     img-prism    .               .";
-}
-
-.cases2-info {
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-template-areas:
-  ".            .                 case2-text      case2-text";
 }
 
 .footer {
