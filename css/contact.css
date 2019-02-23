@@ -1,0 +1,277 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+  /*padding-top: 4rem;*/
+}
+
+/*headers*/
+h1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 4.8rem;
+  margin-top: .5rem;
+  line-height: 10rem;
+  text-align: center;
+  font-family: "cabin";
+}
+
+h2 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 3.2rem;
+  margin-top: 0rem;
+  line-height: 0rem;
+  text-align: left;
+  border-bottom: 3px solid black;
+  font-family: "cabin";
+  /*  padding: 1rem;*/
+}
+
+h3 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 3.2rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "cabin";
+  /*  padding: 1rem;*/
+}
+
+h4 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2.4rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "cabin";
+  /*  padding: 1rem;*/
+}
+
+h5 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: left;
+  padding: 1rem;
+  font-family: "cabin";
+}
+
+h6 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  text-align: left;
+  padding: 1rem;
+  font-family: "cabin";
+}
+
+h7 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "cabin";
+}
+
+h8 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: right;
+  font-family: "cabin";
+}
+
+
+p {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 3rem;
+  text-align: left;
+  padding: 1rem;
+  font-family: "lato";
+}
+
+/* NOTE: for buttons in each section? */
+button {
+  background-color: #668CA3;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
+
+a:link {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
+.container {
+  background-color: teal;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  "nav"
+  "contact"
+  "footer";
+    margin: 0 auto;
+}
+
+/*all sections*/
+section {
+  background-color: white;
+  color: black;
+  /* margin-top: 1rem; */
+  padding: 10rem 3rem;
+}
+
+/*specific sections*/
+.nav {
+  background-color: white;
+  grid-area: nav;
+  display: grid;
+  overflow: hidden;
+  padding: .5rem .5rem;
+}
+
+.nav-left {
+  grid-area: nav-left;
+  padding: 3rem 0rem;
+  text-align: left;
+}
+
+.nav-right {
+  grid-area: nav-right;
+  padding: 3rem 0rem;
+  text-align: right;
+}
+
+.contact {
+  background-color: #white;
+  grid-area: contact;
+  padding: 5rem 1rem;
+}
+
+.footer {
+background-color: white;
+grid-area: footer;
+padding: 5rem 1rem;
+text-align: center;
+}
+
+.contact-icon {
+  grid-area: contact-icon;
+  padding: 1rem;
+}
+
+.outer-footer, h5 {
+  grid-area: outer-footer;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px)
+{
+  .nav-left{
+    display:none;
+  }
+}
+
+/*tablet setup; can be written to specific size ex: ipad.
+you can reoder grid two column sectio here.*/
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: yellow;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "nav        nav         nav         nav"
+    ".          contacts    contacts    ."
+    "footer     footer      footer      footer";
+    width: 90%;
+    /*700px*/
+    margin: 0 auto;
+  }
+
+  .nav {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "nav-left      nav-left     nav-right     nav-right";
+  }
+
+
+  .footer {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    ".       contact-icon      contact-icon     ."
+    ".       outer-footer      outer-footer     .";
+  }
+
+}
+
+/*desktop setup; not written to specific size due to varies mobile devices.
+you can reoder grid two column sectio here.*/
+@media screen and (min-width: 1000px) {
+  .container {
+    background-color: pink;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "nav        nav         nav         nav"
+    ".          contacts    contacts    ."
+    "footer     footer      footer      footer";
+    width: 90%;
+    /*700px*/
+    margin: 0 auto;
+  }
+
+  .nav {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    "nav-left      nav-left     nav-right     nav-right";
+  }
+
+  .footer {
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+    ".       contact-icon      contact-icon     ."
+    ".       outer-footer      outer-footer     .";
+  }
+
+}
