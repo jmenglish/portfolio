@@ -105,6 +105,37 @@ p {
   font-family: "lato";
 }
 
+/* NOTE: for links in nav bar*/
+button {
+  background-color: #668CA3;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
+
+a:link {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #668CA3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 /*mobile setup & order of sections for all devices and sizes. you can reorder sections here.*/
 .container {

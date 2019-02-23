@@ -110,7 +110,7 @@ p {
   font-family: "lato";
 }
 
-/* NOTE: for buttons in each section? */
+/* NOTE: for links in nav bar*/
 button {
   background-color: #668CA3;
   font-family: sans-serif;
@@ -186,7 +186,7 @@ section {
 }
 
 .contact {
-  background-color: #white;
+  background-color: white;
   grid-area: contact;
   padding: 5rem 1rem;
 }
@@ -223,7 +223,7 @@ you can reoder grid two column sectio here.*/
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav         nav"
-    ".          contacts    contacts    ."
+    ".          contact    contact    ."
     "footer     footer      footer      footer";
     width: 90%;
     /*700px*/
@@ -254,7 +254,7 @@ you can reoder grid two column sectio here.*/
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav         nav"
-    ".          contacts    contacts    ."
+    ".          contact    contact    ."
     "footer     footer      footer      footer";
     width: 90%;
     /*700px*/
