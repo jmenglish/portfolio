@@ -151,6 +151,7 @@ a:active {
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
   "nav"
+  /* "hero" */
   "case1"
   "case1-info"
   "case2"
@@ -204,12 +205,13 @@ section {
 /* .hero {
   background-color: white;
   grid-area: hero;
-  padding: 18rem 1rem;
+  padding: 1rem 0rem;
 
 } */
 
 .case1 {
-  background-color: #CFE9E4;
+  /* background-color: #CFE9E4; */
+  background-color: #ADA8B6;
   grid-area: case1;
   padding: 5rem 1rem;
 }
@@ -234,7 +236,8 @@ section {
 
 
 .case2 {
-  background-color: #FFDBDC;
+  /* background-color: #FFDBDC; */
+  background-color: #ADA8B6;
   grid-area: case2;
   padding: 5rem 1rem;
 }
@@ -290,6 +293,7 @@ text-align: center;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav          nav         nav           nav"
+    /* "hero         hero        hero          hero" */
     "case1        case1       case2         case2"
     "case1-info   case1-info  case2-info    case2-info"
     "footer     footer    footer        footer";
@@ -319,6 +323,7 @@ text-align: center;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav           nav"
+    /* "hero       hero        hero          hero" */
     "case1        case1       case2         case2"
     "case1-info   case1-info  case2-info    case2-info"
     "footer     footer      footer        footer";
