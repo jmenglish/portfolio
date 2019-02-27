@@ -236,12 +236,12 @@ section {
   background-color: #BAC5CB;
   grid-area: hero;
   /* display: grid; */
-  padding: 2rem 0rem;
+  padding: 0rem 0rem;
 }
 
 .case-image {
   grid-area: case-image;
-  padding: 5rem 5rem;
+  padding: 0rem 0rem;
   text-align: center;
 }
 
