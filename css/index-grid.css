@@ -144,7 +144,7 @@ a:active {
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
-  background-color: teal;
+  /* background-color: teal; */
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -289,7 +289,7 @@ text-align: center;
 /*tablet setup; can be written to specific size ex: ipad*/
 @media screen and (min-width: 768px) {
   .container {
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav          nav         nav           nav"
@@ -319,7 +319,7 @@ text-align: center;
 /*desktop setup; not written to specific size due to varies mobile devices*/
 @media screen and (min-width: 1000px) {
   .container {
-    background-color: pink;
+    /* background-color: pink; */
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav           nav"

@@ -149,7 +149,7 @@ a:active {
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
-  background-color: teal;
+  /* background-color: teal; */
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -233,7 +233,7 @@ section {
 }
 
 .hero {
-  background-color: #BAC5CB;
+  /* background-color: #BAC5CB; */
   grid-area: hero;
   /* display: grid; */
   padding: 0rem 0rem;
@@ -241,7 +241,7 @@ section {
 
 .case-image {
   grid-area: case-image;
-  padding: 0rem 0rem;
+  padding: 0rem 5rem;
   text-align: center;
 }
 
@@ -516,7 +516,7 @@ p {
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 768px) {
   .container {
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
       "nav              nav                 nav"
@@ -591,7 +591,7 @@ you can reoder grid two column sectio here.*/
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 1000px) {
   .container {
-    background-color: pink;
+    /* background-color: pink; */
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
       "nav              nav                 nav"
