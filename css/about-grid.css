@@ -13,16 +13,6 @@ body {
 }
 
 /*headers*/
-h1 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 4.8rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  font-family: "cabin";
-  /*  padding: 1rem;*/
-}
 
 h2 {
   color: black;
@@ -31,16 +21,6 @@ h2 {
   margin-top: .5rem;
   line-height: 3rem;
   text-align: center;
-  font-family: "cabin";
-}
-
-h3 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 2.4rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: left;
   font-family: "cabin";
 }
 
@@ -53,26 +33,6 @@ h4 {
   padding: 1rem;
   font-family: "cabin";
 }
-
-/* h5 {
-  font-family: sans-serif;
-  font-size: 1.8rem;
-  margin-top: .5rem;
-  line-height: 1.3;
-  text-align: center;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h6 {
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 1.3;
-  text-align: right;
-  padding: 1rem;
-  font-family: "cabin";
-} */
 
 h7 {
   color: black;

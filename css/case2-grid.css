@@ -11,141 +11,6 @@ body {
   /*padding-top: 4rem;*/
 }
 
-/*headers*/
-h1 {
-  color: #212121;
-  font-family: sans-serif;
-  font-size: 4.0rem;
-  margin-top: .5rem;
-  line-height: 5rem;
-  text-align: left;
-  font-family: "cabin";
-}
-
-h2 {
-  color: #668CA3;
-  font-family: sans-serif;
-  font-size: 3.2rem;
-  margin-top: .5rem;
-  line-height: 5rem;
-  text-align: left;
-  font-family: "cabin";
-  border-bottom: 3px solid #668CA3;
-}
-
-h3 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 2.4rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: left;
-  font-family: "cabin";
-}
-
-h4 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 2rem;
-  margin-top: .5rem;
-  line-height: 5rem;
-  text-align: left;
-  font-family: "cabin";
-  /*padding: 1rem;*/
-}
-
-h5 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.8rem;
-  margin-top: 0rem;
-  line-height: 3rem;
-  text-align: left;
-  font-family: "cabin";
-}
-
-h6 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: left;
-  font-family: "cabin";
-}
-
-h7 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h8 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h9 {
-  color: #4A4A4A;
-  font-family: sans-serif;
-  font-size: 1.4rem;
-  line-height: 3rem;
-  text-align: right;
-  font-family: "cabin";
-}
-
-p {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3.5rem;
-  text-align: left;
-  font-family: "lato";
-}
-
-/*button funcationality throughout page*/
-button {
-  background-color: #668CA3;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-}
-
-a:link {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: none;
-}
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
@@ -157,7 +22,6 @@ a:active {
   grid-template-areas:
     "nav"
     "hero"
-    "intro-header"
     "intro-summary"
     "intro"
     "disc-header"
@@ -245,23 +109,17 @@ section {
   text-align: center;
 }
 
-/*Introduction*/
-.intro-header {
-  background-color: white;
-  grid-area: intro-header;
-  padding: 2rem 3rem;
-}
 
 .intro-summary {
   background-color: white;
   grid-area: intro-summary;
-  padding: 2.5rem 3rem;
+  padding: 0rem 3rem;
 }
 
 .intro {
   background-color: white;
   grid-area: intro;
-  padding: 2.5rem 3rem;
+  padding: 2rem 3rem;
 }
 
 /*Discovery*/
@@ -288,13 +146,13 @@ section {
   justify-content: center;
 }
 
-h5 {
+/* h5 {
   margin: 1rem;
 }
 
 p {
   margin: 1rem;
-}
+} */
 
 .flex-container2 {
   text-align: left;
@@ -521,7 +379,6 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
       "nav              nav                 nav"
       "hero             hero                hero"
-      ".                intro-header        ."
       ".                intro-summary       ."
       ".                intro               ."
       ".                disc-header         ."
@@ -596,7 +453,6 @@ you can reoder grid two column sectio here.*/
     grid-template-areas:
       "nav              nav                 nav"
       "hero             hero                hero"
-      ".                intro-header        ."
       ".                intro-summary       ."
       ".                intro               ."
       ".                disc-header         ."
