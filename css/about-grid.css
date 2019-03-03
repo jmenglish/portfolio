@@ -12,94 +12,9 @@ body {
   /*padding-top: 4rem;*/
 }
 
-/*headers*/
-
-h2 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 3.2rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  font-family: "cabin";
-}
-
-h4 {
-  font-family: sans-serif;
-  font-size: 2rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: left;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h7 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h8 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.4rem;
-  line-height: 3rem;
-  text-align: right;
-  font-family: "cabin";
-  /* font-weight: bold; */
-}
-
-p {
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height:  3rem;
-  text-align: left;
-  padding: 1rem;
-  font-family: "lato";
-}
-
-/* NOTE: for links in nav bar*/
-button {
-  background-color: #668CA3;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-}
-
-a:link {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 /*mobile setup & order of sections for all devices and sizes. you can reorder sections here.*/
 .container {
-  background-color: teal;
+  /* background-color: teal; */
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -113,7 +28,7 @@ a:active {
     margin: 0 auto;
 }
 
-/*all sections*/
+/*Body Sections*/
 section {
   background-color: white;
   color: black;
@@ -121,32 +36,10 @@ section {
   padding: 10rem 3rem;
 }
 
-/*specific sections*/
-.nav {
-  background-color: white;
-  grid-area: nav;
-  display: grid;
-  overflow: hidden;
-  padding: .5rem .5rem;
-}
-
-.nav-left {
-  grid-area: nav-left;
-  padding: 3rem 0rem;
-  text-align: left;
-}
-
-.nav-right {
-  grid-area: nav-right;
-  padding: 3rem 0rem;
-  text-align: right;
-}
-
-
 .hero {
   background-color: white;
   grid-area: hero;
-  padding: 2.5rem 1rem;
+  padding: 1rem 20rem;
   text-align: center;
 }
 
@@ -155,32 +48,16 @@ section {
 .section1 {
   background-color: white;
   grid-area: section1;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 }
 
 /*question 2*/
 .section2 {
   background-color: white;
   grid-area: section2;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 }
 
-.footer {
-background-color: white;
-grid-area: footer;
-padding: 5rem 1rem;
-text-align: center;
-}
-
-.contact-icon {
-  grid-area: contact-icon;
-  padding: 1rem;
-}
-
-.outer-footer, h5 {
-  grid-area: outer-footer;
-  padding: 1rem;
-}
 
 @media only screen and (max-width: 767px) and (min-width: 320px)
 {
@@ -193,7 +70,7 @@ text-align: center;
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 768px) {
   .container {
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav          nav           nav         nav"
@@ -226,7 +103,7 @@ you can reoder grid two column sectio here.*/
 you can reoder grid two column sectio here.*/
 @media screen and (min-width: 1000px) {
   .container {
-    background-color: pink;
+    /* background-color: pink; */
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-areas:
     "nav        nav         nav         nav"

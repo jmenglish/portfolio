@@ -12,82 +12,6 @@ body {
   /*padding-top: 4rem;*/
 }
 
-/*headers*/
-h2 {
-  border-bottom: 3px solid black;
-  color: black;
-  font-family: "cabin";
-  font-size: 3.2rem;
-  line-height: 0rem;
-  margin-top: 0rem;
-  text-align: left;
-  /*  padding: 1rem;*/
-}
-
-h6 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  line-height: 2rem;
-  text-align: left;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-h7 {
-  color: black;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: center;
-  padding: 1rem;
-  font-family: "cabin";
-}
-
-
-p {
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-  line-height: 3rem;
-  text-align: left;
-  padding: 1rem;
-  font-family: "lato";
-}
-
-/* NOTE: for links in nav bar*/
-button {
-  background-color: #668CA3;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-  margin-top: .5rem;
-}
-
-a:link {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #668CA3;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #4A4A4A;
-  background-color: transparent;
-  text-decoration: none;
-}
 
 /*mobiles setup & order of section for all devices and sizes. you can reorder section here.*/
 .container {
@@ -107,7 +31,7 @@ a:active {
     margin: 0 auto;
 }
 
-/*all sections*/
+/*Body Sections*/
 section {
   background-color: white;
   color: black;
@@ -129,26 +53,6 @@ section {
 } */
 
 /*specific sections*/
-.nav {
-  background-color: white;
-  grid-area: nav;
-  display: grid;
-  overflow: hidden;
-  padding: .5rem .5rem;
-}
-
-.nav-left {
-  grid-area: nav-left;
-  padding: 3rem 0rem;
-  text-align: left;
-}
-
-.nav-right {
-  grid-area: nav-right;
-  padding: 3rem 0rem;
-  text-align: right;
-}
-
 /* .hero {
   background-color: white;
   grid-area: hero;
@@ -157,7 +61,7 @@ section {
 } */
 
 .case1 {
-  /* background-color: #CFE9E4; */
+  /* background-color: #DDDDDD; */
   background-color: #ADA8B6;
   grid-area: case1;
   padding: 5rem 1rem;
@@ -169,21 +73,20 @@ section {
   text-align: center;
 }
 
-.case1-info, h2 {
+.case1-info {
   background-color: white;
   grid-area: case1-info;
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
   text-align: left;
 }
 
 .case1-text {
   grid-area: case1-text;
-  padding: 0rem 2rem;
 }
 
 
 .case2 {
-  /* background-color: #FFDBDC; */
+  /* background-color: #DDDDDD; */
   background-color: #ADA8B6;
   grid-area: case2;
   padding: 5rem 1rem;
@@ -196,33 +99,15 @@ section {
 
 }
 
-.case2-info, h2 {
+.case2-info {
   background-color: white;
   grid-area: case2-info;
-  padding: 3rem .5rem;
+  padding: 3rem 1rem;
   text-align: left;
 }
 
 .case2-text {
   grid-area: case2-text;
-  padding: 0rem 2rem;
-}
-
-.footer {
-background-color: white;
-grid-area: footer;
-padding: 5rem 1rem;
-text-align: center;
-}
-
-.contact-icon {
-  grid-area: contact-icon;
-  padding: 1rem;
-}
-
-.outer-footer, h5 {
-  grid-area: outer-footer;
-  padding: 1rem;
 }
 
 

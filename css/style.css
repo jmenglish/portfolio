@@ -34,10 +34,10 @@ h2 {
 h3 {
   color: #212121;
   font-family: "cabin";
-  font-size: 3.2rem;
+  font-size: 3.0rem;
   line-height: 0rem;
   margin-top: 0rem;
-  text-align: left;
+  text-align: center;
   /*  padding: 1rem;*/
 }
 
@@ -46,7 +46,7 @@ h4 {
   color: #212121;
   font-family: "cabin";
   font-size: 3.0rem;
-  line-height: 0rem;
+  line-height: 5rem;
   margin-top: 0rem;
   text-align: left;
   /*  padding: 1rem;*/
@@ -104,8 +104,20 @@ p {
   font-size: 1.6rem;
   line-height: 3.5rem;
   margin-top: .5rem;
+  /* margin: 1rem; */
   text-align: left;
 }
+
+c {
+  color: #212121;
+  font-family: "cabin";
+  font-size: 1.8rem;
+  line-height: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 
 /*button funcationality throughout page*/
 button {
@@ -138,4 +150,45 @@ a:active {
   color: #4A4A4A;
   background-color: transparent;
   text-decoration: none;
+}
+
+/* NOTE: Body Sections Below */
+
+/*header*/
+.nav {
+  background-color: white;
+  grid-area: nav;
+  display: grid;
+  overflow: hidden;
+  padding: .5rem .5rem;
+}
+
+.nav-left {
+  grid-area: nav-left;
+  padding: 3rem 0rem;
+  text-align: left;
+}
+
+.nav-right {
+  grid-area: nav-right;
+  padding: 3rem 0rem;
+  text-align: right;
+}
+
+
+/*footer*/
+.footer {
+  background-color: white;
+  grid-area: footer;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.contact-icon {
+  grid-area: contact-icon;
+  /* padding: 1rem; */
+}
+
+.outer-footer {
+  grid-area: outer-footer;
 }

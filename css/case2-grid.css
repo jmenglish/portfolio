@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
 }
 
-/*all sections*/
+/*Body Sections*/
 section {
   background-color: white;
   color: black;
@@ -75,32 +75,11 @@ section {
   padding: 5px;
 }
 
-/*specific sections*/
-.nav {
-  background-color: white;
-  grid-area: nav;
-  display: grid;
-  overflow: hidden;
-  padding: .5rem .5rem;
-}
-
-.nav-left {
-  grid-area: nav-left;
-  padding: 3rem 0rem;
-  text-align: left;
-}
-
-.nav-right {
-  grid-area: nav-right;
-  padding: 3rem 0rem;
-  text-align: right;
-}
-
 .hero {
   /* background-color: #BAC5CB; */
   grid-area: hero;
   /* display: grid; */
-  padding: 0rem 0rem;
+  padding: 0rem;
 }
 
 .case-image {
@@ -130,29 +109,18 @@ section {
 }
 
 .research {
-  background-color: white;
   grid-area: research;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .swot {
-  background-color: white;
   grid-area: swot;
-  padding: 5rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .flex-container1 {
-  text-align: left;
   justify-content: center;
 }
-
-/* h5 {
-  margin: 1rem;
-}
-
-p {
-  margin: 1rem;
-} */
 
 .flex-container2 {
   text-align: left;
@@ -162,7 +130,7 @@ p {
 .survey1 {
   background-color: white;
   grid-area: survey1;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 
@@ -181,7 +149,7 @@ p {
 .survey2 {
   background-color: white;
   grid-area: survey2;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 /* .ChartJS3 {
@@ -199,7 +167,7 @@ p {
 .personas {
   background-color: white;
   grid-area: personas;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 
 }
 
@@ -220,13 +188,13 @@ p {
 .iterations {
   background-color: white;
   grid-area: iterations;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .sketches {
   background-color: white;
   grid-area: sketches;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .img-sketches1 {
@@ -287,7 +255,7 @@ p {
 .product {
   background-color: white;
   grid-area: product;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .mobile-hifi1 {
@@ -314,13 +282,13 @@ p {
 .user-testing {
   background-color: white;
   grid-area: user-testing;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .test-button {
   background-color: white;
   grid-area: test-button;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -334,25 +302,9 @@ p {
 .conclusion {
   background-color: white;
   grid-area: conclusion;
-  padding: 2.5rem 3rem;
+  padding: 1rem 3rem;
 }
 
-/*footer nav and contact info*/
-.footer {
-  background-color: white;
-  grid-area: footer;
-  padding: 5rem 1rem;
-  text-align: center;
-}
-
-.contact-icon {
-  grid-area: contact-icon;
-  padding: 1rem;
-}
-
-.outer-footer {
-  grid-area: outer-footer;
-}
 
 /* NOTE: this is for the ChartJS */
 /* @media (min-width: 70rem) {
@@ -430,6 +382,7 @@ you can reoder grid two column sectio here.*/
 
   .flex-container1 {
     flex-wrap: nowrap;
+
   }
 
   .flex-container2 {
