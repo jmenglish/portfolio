@@ -64,19 +64,19 @@ section {
   /* background-color: #DDDDDD; */
   background-color: #ADA8B6;
   grid-area: case1;
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .img-eco {
   grid-area: img-eco;
-  padding: 2rem;
+  padding: 0rem 2rem;
   text-align: center;
 }
 
 .case1-info {
   background-color: white;
   grid-area: case1-info;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: left;
 }
 
@@ -89,12 +89,12 @@ section {
   /* background-color: #DDDDDD; */
   background-color: #ADA8B6;
   grid-area: case2;
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .img-prism {
   grid-area: img-prism;
-  padding: 2rem;
+  padding: 0rem 2rem;
   text-align: center;
 
 }
@@ -102,7 +102,7 @@ section {
 .case2-info {
   background-color: white;
   grid-area: case2-info;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: left;
 }
 
