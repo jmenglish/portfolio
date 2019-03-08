@@ -84,7 +84,7 @@ section {
 
 .case-image {
   grid-area: case-image;
-  padding: 0rem 5rem;
+  padding: 0rem 0rem;
   text-align: center;
 }
 
@@ -113,18 +113,21 @@ section {
   padding: 1rem 3rem;
 }
 
-.swot {
+ .swot {
   grid-area: swot;
   padding: 2rem 3rem;
 }
 
-.flex-container1 {
+.flex-container1   {
   justify-content: center;
+  /* padding: 20px !important; */
+
 }
 
-.flex-container2 {
+.flex-container2  {
   text-align: left;
   justify-content: center;
+
 }
 
 .survey1 {
@@ -364,7 +367,7 @@ you can reoder grid two column sectio here.*/
       ".                con-header          ."
       ".                conclusion            ."
       "footer           footer                footer";
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -439,7 +442,7 @@ you can reoder grid two column sectio here.*/
       ".                con-header          ."
       ".                conclusion            ."
       "footer           footer                footer";
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 

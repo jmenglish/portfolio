@@ -160,7 +160,7 @@ a:active {
   grid-area: nav;
   display: grid;
   overflow: hidden;
-  padding: .5rem .5rem;
+  padding: 0rem 3rem;
 }
 
 .nav-left {
