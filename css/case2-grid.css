@@ -33,22 +33,16 @@ body {
     "survey2"
     /* "ChartJS3"
     "ChartJS4" */
+    "summary"
     "personas"
     "img-personas"
+    "ia-header"
+    "userflows"
+    "sitemap"
     "process-header"
-    "iterations"
     "sketches"
-    "img-sketches1"
-    "img-sketches2"
     "wireframes"
-    "home-mobile1"
-    "home-desk1"
-    "dash-mobile1"
-    "dash-desk1"
-    "design-header"
-    "product"
-    "mobile-hifi1"
-    "desk-hifi1"
+    "mockups"
     "test-header"
     "user-testing"
     "test-button"
@@ -110,7 +104,7 @@ section {
 
 .research {
   grid-area: research;
-  padding: 1rem 3rem;
+  padding: 0rem 3rem;
 }
 
  .swot {
@@ -159,13 +153,13 @@ section {
   background-color: white;
   grid-area: ChartJS3;
   padding: 10rem 3rem;
-}
-
-.ChartJS4 {
-  background-color: white;
-  grid-area: ChartJS4;
-  padding: 10rem 3rem;
 } */
+
+.Summary {
+  background-color: white;
+  grid-area: Summary;
+  padding: 1rem 3rem;
+}
 
 .personas {
   background-color: white;
@@ -181,6 +175,25 @@ section {
 
 }
 
+/*IA*/
+.IA-header {
+  background-color: white;
+  grid-area: IA-header;
+  padding: 2rem 3rem;
+}
+
+.userflows {
+  background-color: white;
+  grid-area: userflows;
+  padding: 1rem 3rem;
+}
+
+.sitemap {
+  background-color: white;
+  grid-area: sitemap;
+  padding: 1rem 3rem;
+}
+
 /*Process*/
 .process-header {
   background-color: white;
@@ -188,11 +201,6 @@ section {
   padding: 2rem 3rem;
 }
 
-.iterations {
-  background-color: white;
-  grid-area: iterations;
-  padding: 1rem 3rem;
-}
 
 .sketches {
   background-color: white;
@@ -200,19 +208,6 @@ section {
   padding: 1rem 3rem;
 }
 
-.img-sketches1 {
-  background-color: white;
-  grid-area: img-sketches1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-.img-sketches2 {
-  background-color: white;
-  grid-area: img-sketches2;
-  padding: 1rem 3rem;
-  text-align: center;
-}
 
 .wireframes {
   background-color: white;
@@ -220,60 +215,13 @@ section {
   padding: 2.5rem 3rem;
 }
 
-.home-mobile1 {
+.mockups {
   background-color: white;
-  grid-area: home-mobile1;
+  grid-area: mockups;
   padding: 1rem 3rem;
   text-align: center;
 }
 
-.home-desk1 {
-  background-color: white;
-  grid-area: home-desk1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-.dash-mobile1 {
-  background-color: white;
-  grid-area: dash-mobile1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-.dash-desk1 {
-  background-color: white;
-  grid-area: dash-desk1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-/*Design*/
-.design-header {
-  background-color: white;
-  grid-area: design-header;
-  padding: 2rem 3rem;
-}
-
-.product {
-  background-color: white;
-  grid-area: product;
-  padding: 1rem 3rem;
-}
-
-.mobile-hifi1 {
-  background-color: white;
-  grid-area: mobile-hifi1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-.desk-hifi1 {
-  background-color: white;
-  grid-area: desk-hifi1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
 
 /*Testing*/
 .test-header {
@@ -345,22 +293,16 @@ you can reoder grid two column sectio here.*/
       ".                survey2             ."
       /* ".                ChartJS3            ."
       ".                ChartJS4            ." */
+      ".                summary             ."
       ".                personas            ."
       ".                img-personas        ."
+      ".                IA-header           ."
+      ".                userflows           ."
+      ".                sitemap             ."
       ".                process-header      ."
-      ".                iterations          ."
       ".                sketches            ."
-      ".                img-sketches1       ."
-      ".                img-sketches2       ."
       ".                wireframes          ."
-      ".                home-mobile1        ."
-      ".                home-desk1          ."
-      ".                dash-mobile1        ."
-      ".                dash-desk1          ."
-      ".                design-header       ."
-      ".                product             ."
-      ".                mobile-hifi1        ."
-      ".                desk-hifi1          ."
+      ".                mockups             ."
       ".                test-header         ."
       ".                user-testing        ."
       ".                test-button         ."
@@ -420,22 +362,16 @@ you can reoder grid two column sectio here.*/
       ".                survey2             ."
       /* ".                ChartJS3            ."
       ".                ChartJS4            ." */
+      ".                Summary             ."
       ".                personas            ."
       ".                img-personas        ."
+      ".                IA-header           ."
+      ".                userflows           ."
+      ".                sitemap             ."
       ".                process-header      ."
-      ".                iterations          ."
       ".                sketches            ."
-      ".                img-sketches1       ."
-      ".                img-sketches2       ."
       ".                wireframes          ."
-      ".                home-mobile1        ."
-      ".                home-desk1          ."
-      ".                dash-mobile1        ."
-      ".                dash-desk1          ."
-      ".                design-header       ."
-      ".                product             ."
-      ".                mobile-hifi1        ."
-      ".                desk-hifi1          ."
+      ".                mockups             ."
       ".                test-header         ."
       ".                user-testing        ."
       ".                test-button         ."

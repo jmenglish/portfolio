@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   /* NOTE: blue section headers */
-  border-bottom: 3px solid #668CA3;
+  /* border-bottom: 3px solid #668CA3; */
   color: #668CA3;
   font-family: "cabin";
   font-size: 3.2rem;
@@ -35,8 +35,9 @@ h3 {
   color: #212121;
   font-family: "cabin";
   font-size: 3.0rem;
-  line-height: 0rem;
-  margin-top: 0rem;
+  font-style: italic;
+  line-height: 5rem;
+  margin-top: .5rem;
   text-align: center;
   /*  padding: 1rem;*/
 }
