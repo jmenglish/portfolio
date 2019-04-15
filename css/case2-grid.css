@@ -33,6 +33,7 @@ body {
     "survey2"
     /* "ChartJS3"
     "ChartJS4" */
+    "survey3"
     "summary"
     "personas"
     "img-personas"
@@ -70,14 +71,14 @@ section {
 }
 
 .hero {
-  background-color: #BAC5CB;
+  /* background-color: #BAC5CB; */
   grid-area: hero;
-  padding: 30rem;
+  padding: 0rem;
 }
 
 .case-image {
   grid-area: case-image;
-  padding: 0rem 0rem;
+  padding: 0rem 10rem;
   text-align: center;
 }
 
@@ -145,6 +146,12 @@ section {
 .survey2 {
   background-color: white;
   grid-area: survey2;
+  padding: 1rem 3rem;
+}
+
+.survey3 {
+  background-color: white;
+  grid-area: survey3;
   padding: 1rem 3rem;
 }
 
@@ -290,6 +297,7 @@ you can reoder grid two column sectio here.*/
       /* ".                ChartJS1            ."
       ".                ChartJS2            ." */
       ".                survey2             ."
+      ".                survey3             ."
       /* ".                ChartJS3            ."
       ".                ChartJS4            ." */
       ".                summary             ."
@@ -359,6 +367,7 @@ you can reoder grid two column sectio here.*/
       /* ".                ChartJS1            ."
       ".                ChartJS2            ." */
       ".                survey2             ."
+      ".                survey3             ."
       /* ".                ChartJS3            ."
       ".                ChartJS4            ." */
       ".                Summary             ."

@@ -36,12 +36,9 @@ section {
   background-color: white;
   color: black;
   /* margin-top: 1rem; */
-  padding: 10rem 3rem;
 }
 
 .case1 {
-  /* background-color: #DDDDDD; */
-  background-color: #BAC5CB;
   grid-area: case1;
   padding: 0rem 0rem;
 }
@@ -59,8 +56,6 @@ section {
 
 
 .case2 {
-  /* background-color: #DDDDDD; */
-  background-color: #ADA8B6;
   grid-area: case2;
   padding: 0rem 0rem;
 }
