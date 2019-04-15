@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -17,16 +16,16 @@ body {
 .container {
   /* background-color: teal; */
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0rem;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
   "nav"
   /* "hero" */
   "case1"
-  "case1-info"
+  /* "case1-info" */
   "case2"
-  "case2-info"
+  /* "case2-info" */
   "footer";
     margin: 0 auto;
 }
@@ -36,7 +35,6 @@ section {
   background-color: white;
   color: black;
   /* margin-top: 1rem; */
-  padding: 10rem 3rem;
 }
 
 /* .column {
@@ -61,10 +59,8 @@ section {
 } */
 
 .case1 {
-  /* background-color: #DDDDDD; */
-  background-color: #BAC5CB;
   grid-area: case1;
-  padding: 2rem 1rem;
+  padding: 0rem 0rem;
 }
 
 .img-eco {
@@ -73,7 +69,7 @@ section {
   text-align: center;
 }
 
-.case1-info {
+/* .case1-info {
   background-color: white;
   grid-area: case1-info;
   padding: 2rem 1rem;
@@ -82,14 +78,12 @@ section {
 
 .case1-text {
   grid-area: case1-text;
-}
+} */
 
 
 .case2 {
-  /* background-color: #DDDDDD; */
-  background-color: #ADA8B6;
   grid-area: case2;
-  padding: 2rem 1rem;
+  padding: 0rem 0rem;
 }
 
 .img-prism {
@@ -99,7 +93,7 @@ section {
 
 }
 
-.case2-info {
+/* .case2-info {
   background-color: white;
   grid-area: case2-info;
   padding: 2rem 1rem;
@@ -108,7 +102,7 @@ section {
 
 .case2-text {
   grid-area: case2-text;
-}
+} */
 
 
 @media only screen and (max-width: 767px) and (min-width: 320px)
@@ -127,7 +121,7 @@ section {
     "nav          nav         nav           nav"
     /* "hero         hero        hero          hero" */
     "case1        case1       case2         case2"
-    "case1-info   case1-info  case2-info    case2-info"
+    /* "case1-info   case1-info  case2-info    case2-info" */
     "footer     footer    footer        footer";
     width: 90%;
     /*700px*/
@@ -157,7 +151,7 @@ section {
     "nav        nav         nav           nav"
     /* "hero       hero        hero          hero" */
     "case1        case1       case2         case2"
-    "case1-info   case1-info  case2-info    case2-info"
+    /* "case1-info   case1-info  case2-info    case2-info" */
     "footer     footer      footer        footer";
     width: 90%;
     /*980px*/
