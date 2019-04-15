@@ -70,10 +70,9 @@ section {
 }
 
 .hero {
-  /* background-color: #BAC5CB; */
+  background-color: #BAC5CB;
   grid-area: hero;
-  /* display: grid; */
-  padding: 0rem;
+  padding: 30rem;
 }
 
 .case-image {
