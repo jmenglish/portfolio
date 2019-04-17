@@ -65,7 +65,7 @@ section {
 
 .img-eco {
   grid-area: img-eco;
-  padding: 0rem 2rem;
+  padding: 0rem 0rem;
   text-align: center;
 }
 
@@ -88,7 +88,7 @@ section {
 
 .img-prism {
   grid-area: img-prism;
-  padding: 0rem 2rem;
+  padding: 0rem 0rem;
   text-align: center;
 
 }
@@ -123,7 +123,7 @@ section {
     "case1        case1       case2         case2"
     /* "case1-info   case1-info  case2-info    case2-info" */
     "footer     footer    footer        footer";
-    width: 90%;
+    width: 95%;
     /*700px*/
     margin: 0 auto;
   }
@@ -153,7 +153,7 @@ section {
     "case1        case1       case2         case2"
     /* "case1-info   case1-info  case2-info    case2-info" */
     "footer     footer      footer        footer";
-    width: 90%;
+    width: 100%;
     /*980px*/
     margin: 0 auto;
   }

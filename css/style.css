@@ -191,7 +191,7 @@ a:active {
 .footer {
   background-color: white;
   grid-area: footer;
-  padding: 5rem 1rem;
+  padding: 3rem 0rem;
   text-align: center;
 }
 
