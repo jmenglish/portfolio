@@ -102,7 +102,7 @@ h9 {
 h10 {
   color: #212121;
   font-family: "cabin";
-  font-size: 3.2rem;
+  font-size: 3.0rem;
   line-height: 5rem;
   margin-top: .5rem;
   text-align: center;
@@ -191,7 +191,7 @@ a:active {
 .footer {
   background-color: white;
   grid-area: footer;
-  padding: 3rem 0rem;
+  padding: 5rem 1rem;
   text-align: center;
 }
 

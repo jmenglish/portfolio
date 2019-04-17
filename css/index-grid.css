@@ -58,6 +58,12 @@ section {
 
 } */
 
+.caseintro {
+  background-color: white;
+  grid-area: caseintro;
+  padding: 2rem 3rem;
+}
+
 .case1 {
   grid-area: case1;
   padding: 0rem 0rem;
