@@ -37,9 +37,9 @@ section {
 }
 
 .hero {
-  background-color: white;
+  background-color: grey;
   grid-area: hero;
-  padding: 1rem 20rem;
+  padding: 20rem 20rem;
   text-align: center;
 }
 
