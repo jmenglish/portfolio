@@ -26,19 +26,24 @@ body {
     "intro"
     "disc-header"
     "research"
+    "swot"
+    "survey1"
+    /* "ChartJS1"
+    "ChartJS2" */
+    "survey2"
+    /* "ChartJS3"
+    "ChartJS4" */
+    "survey3"
+    "summary"
     "personas"
     "img-personas"
+    "ia-header"
+    "userflows"
+    "sitemap"
     "process-header"
-    "iterations"
     "sketches"
-    "img-sketches1"
-    "img-sketches2"
     "wireframes"
-    "img-lofi"
-    "img-hifi"
-    "design-header"
-    "product"
-    "img-final"
+    "mockups"
     "test-header"
     "user-testing"
     "test-button"
@@ -48,15 +53,15 @@ body {
   margin: 0 auto;
 }
 
-/*all sections*/
-section  {
+/*Body Sections*/
+section {
   background-color: white;
   color: black;
   padding: 10rem 3rem;
 }
 
 /*side-by-side images with CSS flex property*/
-.row  {
+.row {
   display: flex;
 }
 
@@ -65,21 +70,18 @@ section  {
   padding: 5px;
 }
 
-/*Body Sections*/
 .hero {
-  background-color: #BAC5CB;
+  /* background-color: #BAC5CB; */
   grid-area: hero;
-  /* display: grid; */
   padding: 0rem;
 }
 
 .case-image {
   grid-area: case-image;
-  padding: 0rem 12rem;
+  padding: 0rem 10rem;
   text-align: center;
 }
 
-/*Introduction*/
 
 .intro-summary {
   background-color: white;
@@ -101,21 +103,69 @@ section  {
 }
 
 .research {
-  background-color: white;
   grid-area: research;
+  padding: 0rem 3rem;
+}
+
+ .swot {
+  grid-area: swot;
+  padding: 2rem 3rem;
+}
+
+.flex-container1   {
+  justify-content: center;
+  /* padding: 20px !important; */
+
+}
+
+.flex-container2  {
+  text-align: left;
+  justify-content: center;
+
+}
+
+.survey1 {
+  background-color: white;
+  grid-area: survey1;
   padding: 1rem 3rem;
 }
 
-.flex-container1 {
-  text-align: left;
-  justify-content: center;
+
+/* .ChartJS1 {
+  background-color: white;
+  grid-area: ChartJS1;
+  padding: 10rem 3rem;
 }
 
-.flex-container2 {
-  text-align: left;
-  justify-content: center;
+.ChartJS2 {
+  background-color: white;
+  grid-area: ChartJS2;
+  padding: 10rem 3rem;
+} */
+
+.survey2 {
+  background-color: white;
+  grid-area: survey2;
+  padding: 1rem 3rem;
 }
 
+.survey3 {
+  background-color: white;
+  grid-area: survey3;
+  padding: 1rem 3rem;
+}
+
+/* .ChartJS3 {
+  background-color: white;
+  grid-area: ChartJS3;
+  padding: 10rem 3rem;
+} */
+
+.Summary {
+  background-color: white;
+  grid-area: Summary;
+  padding: 1rem 3rem;
+}
 
 .personas {
   background-color: white;
@@ -128,6 +178,26 @@ section  {
   background-color: white;
   grid-area: img-personas;
   padding: 2rem 3rem;
+
+}
+
+/*IA*/
+.IA-header {
+  background-color: white;
+  grid-area: IA-header;
+  padding: 2rem 3rem;
+}
+
+.userflows {
+  background-color: white;
+  grid-area: userflows;
+  padding: 1rem 3rem;
+}
+
+.sitemap {
+  background-color: white;
+  grid-area: sitemap;
+  padding: 1rem 3rem;
 }
 
 /*Process*/
@@ -137,11 +207,6 @@ section  {
   padding: 2rem 3rem;
 }
 
-.iterations {
-  background-color: white;
-  grid-area: iterations;
-  padding: 1rem 3rem;
-}
 
 .sketches {
   background-color: white;
@@ -149,19 +214,6 @@ section  {
   padding: 1rem 3rem;
 }
 
-.img-sketches1 {
-  background-color: white;
-  grid-area: img-sketches1;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-.img-sketches2 {
-  background-color: white;
-  grid-area: img-sketches2;
-  padding: 1rem 3rem;
-  text-align: center;
-}
 
 .wireframes {
   background-color: white;
@@ -169,39 +221,13 @@ section  {
   padding: 2.5rem 3rem;
 }
 
-.img-lofi {
+.mockups {
   background-color: white;
-  grid-area: img-lofi;
+  grid-area: mockups;
   padding: 1rem 3rem;
   text-align: center;
 }
 
-.img-hifi {
-  background-color: white;
-  grid-area: img-hifi;
-  padding: 1rem 3rem;
-  text-align: center;
-}
-
-/*Design*/
-.design-header {
-  background-color: white;
-  grid-area: design-header;
-  padding: 2rem 3rem;
-}
-
-.product {
-  background-color: white;
-  grid-area: product;
-  padding: 1rem 3rem;
-}
-
-.img-final {
-  background-color: white;
-  grid-area: img-final;
-  padding: 1rem 3rem;
-  text-align: center;
-}
 
 /*Testing*/
 .test-header {
@@ -219,7 +245,7 @@ section  {
 .test-button {
   background-color: white;
   grid-area: test-button;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -235,6 +261,7 @@ section  {
   grid-area: conclusion;
   padding: 1rem 3rem;
 }
+
 
 /* NOTE: this is for the ChartJS */
 /* @media (min-width: 70rem) {
@@ -265,26 +292,31 @@ you can reoder grid two column sectio here.*/
       ".                intro               ."
       ".                disc-header         ."
       ".                research            ."
+      ".                swot                ."
+      ".                survey1             ."
+      /* ".                ChartJS1            ."
+      ".                ChartJS2            ." */
+      ".                survey2             ."
+      ".                survey3             ."
+      /* ".                ChartJS3            ."
+      ".                ChartJS4            ." */
+      ".                summary             ."
       ".                personas            ."
       ".                img-personas        ."
+      ".                IA-header           ."
+      ".                userflows           ."
+      ".                sitemap             ."
       ".                process-header      ."
-      ".                iterations          ."
       ".                sketches            ."
-      ".                img-sketches1       ."
-      ".                img-sketches2       ."
       ".                wireframes          ."
-      ".                img-lofi            ."
-      ".                img-hifi1           ."
-      ".                design-header       ."
-      ".                product             ."
-      ".                img-final           ."
+      ".                mockups             ."
       ".                test-header         ."
       ".                user-testing        ."
       ".                test-button         ."
       ".                con-header          ."
       ".                conclusion            ."
       "footer           footer                footer";
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -302,6 +334,7 @@ you can reoder grid two column sectio here.*/
 
   .flex-container1 {
     flex-wrap: nowrap;
+
   }
 
   .flex-container2 {
@@ -329,26 +362,31 @@ you can reoder grid two column sectio here.*/
       ".                intro               ."
       ".                disc-header         ."
       ".                research            ."
+      ".                swot                ."
+      ".                survey1             ."
+      /* ".                ChartJS1            ."
+      ".                ChartJS2            ." */
+      ".                survey2             ."
+      ".                survey3             ."
+      /* ".                ChartJS3            ."
+      ".                ChartJS4            ." */
+      ".                Summary             ."
       ".                personas            ."
       ".                img-personas        ."
+      ".                IA-header           ."
+      ".                userflows           ."
+      ".                sitemap             ."
       ".                process-header      ."
-      ".                iterations          ."
       ".                sketches            ."
-      ".                img-sketches1       ."
-      ".                img-sketches2       ."
       ".                wireframes          ."
-      ".                img-lofi            ."
-      ".                img-hifi            ."
-      ".                design-header       ."
-      ".                product             ."
-      ".                img-final           ."
+      ".                mockups             ."
       ".                test-header         ."
       ".                user-testing        ."
       ".                test-button         ."
       ".                con-header          ."
       ".                conclusion            ."
       "footer           footer                footer";
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
