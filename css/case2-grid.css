@@ -79,6 +79,7 @@ section {
 .case-image {
   grid-area: case-image;
   text-align: center;
+  padding: 0rem 0rem;
 }
 
 
