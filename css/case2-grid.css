@@ -37,7 +37,7 @@ body {
     "summary"
     "personas"
     "img-personas"
-    "ia-header"
+    "IA-header"
     "userflows"
     "sitemap"
     "process-header"
@@ -161,9 +161,9 @@ section {
   padding: 10rem 3rem;
 } */
 
-.Summary {
+.summary {
   background-color: white;
-  grid-area: Summary;
+  grid-area: summary;
   padding: 1rem 3rem;
 }
 
@@ -370,7 +370,7 @@ you can reoder grid two column sectio here.*/
       ".                survey3             ."
       /* ".                ChartJS3            ."
       ".                ChartJS4            ." */
-      ".                Summary             ."
+      ".                summary             ."
       ".                personas            ."
       ".                img-personas        ."
       ".                IA-header           ."
